@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="{{ asset('semantic/semantic.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('semantic/components/icon.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('font-awesome/css/all.min.css') }}">
 
         <!-- Scripts -->
         <script src="{{ asset('js/jquery-3.3.1.js') }}"></script>
@@ -23,45 +25,64 @@
     </head>
     <body>
         <div class="wide">
+
+            <div class="top fixed">
+                <div class="ui large menu">
+                    <a class="active item">
+                        Home
+                    </a>
+                    <a class="item">
+                        Messages
+                    </a>
+                    <div class="right menu">
+                        <div class="ui dropdown item">
+                            Language <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item">English</a>
+                                <a class="item">Russian</a>
+                                <a class="item">Spanish</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ui primary button">Sign Up</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="header">
                 <div class="container">
 
                 </div>
             </div>
 
-            <div class="ui centered grid">
-                <div class="centered row">
-                    <div class="ui fours cards">
-                        <div class="ui card">
-                            <div class="image dimmable">
-                                <div class="ui blurring inverted dimmer transition hidden">
-                                    <div class="content">
-                                        <div class="center">
-                                            <div class="ui teal button">Add Friend</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img src="/img/logo.png">
+
+            <div class="content">
+                <div class="ui grid">
+                    <div class="four wide column product-card">
+                        <div class="product-body">
+                            <div class="product-img">
+                                <img src="{{ asset('img/no_photo227x140.png') }}" alt="no-photo">
                             </div>
-                            <div class="content">
-                                <div class="headers">Title</div>
-                                <div class="meta">
-                                    <a class="group">Meta</a>
-                                </div>
-                                <div class="description">One or two sentence description that may go to several lines</div>
+
+                            <div class="product-title">
+                                Samsung Galaxy S9 asdasdasdasdasd7989
                             </div>
-                            <div class="extra content">
-                                <a class="right floated created">Arbitrary</a>
-                                <a class="friends">
-                                    Arbitrary</a>
+
+                            <div class="product-info">
+
                             </div>
                         </div>
                     </div>
+                    <div class="four wide column">asdasdasd</div>
+                    <div class="four wide column">asdasdasd</div>
+                    <div class="four wide column">asdasdasd</div>
                 </div>
             </div>
 
-            <div class="footer">
 
+            <div class="footer">
+                @include("pattern.footer")
             </div>
         </div>
     </body>
