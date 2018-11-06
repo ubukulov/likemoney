@@ -15,3 +15,4 @@ Route::get('/', 'IndexController@index')->name('home');
 Route::get('/test', 'TestController@index');
 Route::get('/product/{id}', 'ProductController@show');
 Route::get('/xml', 'XmlController@index');
+Route::get('/set/brands', 'TestController@setBrands');

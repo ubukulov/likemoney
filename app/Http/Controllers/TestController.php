@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ProductBrand;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -9,7 +10,7 @@ class TestController extends Controller
 {
     public function index() {
         $file = file( $_SERVER['DOCUMENT_ROOT'] . "/files/alser.txt"); // Считываем весь файл в массив
-        for($i = 0; $i < sizeof($file); $i++) {
+        for($i = 0; $i < 1163; $i++) {
             $arr = explode("|", $file[$i]);
 
             if(isset($arr[0]) && isset($arr[1]) && isset($arr[2]) && isset($arr[3]) && isset($arr[4])) {
@@ -28,7 +29,8 @@ class TestController extends Controller
                 DB::transaction(function () use ($title, $brand_id, $base_price, $quantity, $article) {
                     $time = date("Y-m-d H:i:s");
                     $id = DB::table('products')->insertGetId([
-                        'title' => $title, 'category_id' => 0, 'brand_id' => $brand_id , 'active' => '1', 'filled' => '1', 'verified' => '1' , 'created_at' => $time, 'updated_at' => $time
+                        'title' => $title, 'category_id' => 0, 'brand_id' => $brand_id , 'active' => '1', 'filled' => '1', 'verified' => '1' , 'created_at' => $time, 'updated_at' => $time,
+                        'article' => $article
                     ]);
 
                     if($id) {
@@ -44,11 +46,32 @@ class TestController extends Controller
 
     public function exists_brand($title){
         $title = ucfirst($title);
-        $result = DB::select("SELECT * FROM product_brands WHERE title='$title'");
+        $result = DB::select("SELECT id FROM product_brands WHERE title='$title'");
         if($result){
             return $result[0]->id;
         }
 
         return false;
+    }
+
+    public function setBrands() {
+        $product_brands = new ProductBrand();
+        $file = file( $_SERVER['DOCUMENT_ROOT'] . "/files/alser.txt"); // Считываем весь файл в массив
+        for($i = 0; $i < sizeof($file); $i++) {
+            $arr = explode("|", $file[$i]);
+            if(isset($arr[1])) {
+                if(!$this->exists_brand($arr[1])) {
+                    $product_brands::create([
+                        'title' => $arr[1],
+                        'active' => 1,
+                        'created_at' => \Carbon\Carbon::now(),
+                        'updated_at' => \Carbon\Carbon::now()
+                    ]);
+                    echo $arr[1]." добавлено ... <br />";
+                }
+            }
+        }
+
+        echo "Успешно завершено!";
     }
 }
