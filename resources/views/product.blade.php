@@ -1,111 +1,128 @@
 @extends('layouts.app')
 @section('content')
-    <div class="product_card" style="background: #ffffff; padding: 20px;">
-        <div class="ui grid">
-            <div class="four wide column">
-                <img src="{{ asset('img/1dns.jpg') }}" alt="">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="tovar">
+                <h3>{!! $product->title !!}</h3>
+                <p class="artikul">артикул: {!! $product->id !!}</p>
             </div>
-            <div class="eight wide column">
-                <h4>{{ $product->title }}</h4>
-                <div class="product_info">
-                    <p>Цена: 48 299 тг</p>
+            <div class="clrfx"></div>
+            <div class="zoom-left">
+                <img style="border:1px solid #e8e8e6;" id="zoom_03" src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw"  />
+                <div class="clearfix"></div>
 
-                    <p>Товар в наличии</p>
+                <div id="gallery_01" style="width:500px; float:left; ">
 
-                    <p>Артикул товара: {{ $product->id }}</p>
+                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image1.jpg">
+                        <img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100" /></a>
 
-                    <p>Доставка: бесплатно</p>
+                    <a href="#" class="elevatezoom-gallery" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw"><img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100" /></a>
 
-                    <p>
-                        <button type="button" class="ui button green">Купить</button>
-                    </p>
-                </div>
-            </div>
-            <div class="four wide column">
-                <h4>Надо придумать что будет здесь</h4>
-            </div>
-        </div>
-        <br><br>
-        <div class="product_desc">
-            <div id="context2">
-                <div class="ui secondary menu">
-                    <a class="item" data-tab="fourth">Описание товара</a>
-                    <a class="item" data-tab="fifth">Характеристики</a>
-                    <a class="item active" data-tab="sixth">Отзывы</a>
-                </div>
-                <div class="ui active tab segment" data-tab="fourth">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cumque delectus dolor eos esse id incidunt iure neque nihil, quidem suscipit voluptatum. Architecto aut commodi cumque eveniet exercitationem, fugiat in inventore ipsa nemo nisi numquam officiis, optio praesentium quos, tempora temporibus vel voluptas! Debitis eaque, exercitationem odio officiis repellendus vel. Dolorem doloremque fugiat inventore optio quos ratione, voluptate. Accusamus, aliquid aperiam aspernatur autem harum impedit labore laborum laudantium neque nesciunt nihil quis voluptates. Accusamus aliquid dignissimos dolorem dolorum eligendi est eum, ex expedita harum, illum, inventore iste iure magnam maiores minima odio possimus rem repudiandae rerum saepe tenetur ut voluptates. Animi beatae cumque ducimus et eum iusto perferendis totam vitae! Culpa facilis laborum modi recusandae vitae! Ab autem doloribus earum enim itaque magnam ullam vitae! Aliquid amet consectetur corporis deserunt dicta, enim, error ex ipsa iure nesciunt sed soluta totam! Commodi cumque natus provident temporibus? Beatae dolore, ratione! Aliquid, animi commodi dignissimos error fugit id illo inventore labore, quia quibusdam, repellendus rerum ut? Accusamus accusantium aliquid, aut commodi corporis cum cumque cupiditate delectus dolore dolores eligendi error ipsam iste iure nam numquam, pariatur quas quis rem repudiandae saepe sapiente sit suscipit vero vitae voluptas voluptatibus? Beatae distinctio doloremque exercitationem fuga illo impedit laborum natus, placeat quaerat quas repudiandae sunt tenetur, voluptatem! Ab architecto atque commodi debitis deleniti deserunt, dicta dignissimos dolor dolores ea earum enim error excepturi fugiat in incidunt ipsum iste magnam magni, maxime nam necessitatibus nemo nihil, optio pariatur perspiciatis placeat quasi quibusdam quod recusandae rerum ut vel vero. Alias aliquam debitis, dolor ducimus libero maiores sapiente totam! Ab animi cum delectus deserunt doloribus dolorum eaque esse, ex, exercitationem fugit iste minima natus recusandae rem soluta sunt, suscipit temporibus velit voluptatibus voluptatum! Aspernatur aut consectetur enim, nam quibusdam quo recusandae ut. Aperiam doloremque est facilis, hic ipsam, ipsum nam odit quas repellat saepe tempore voluptatibus. Accusamus alias, aliquam amet aperiam architecto atque culpa cum delectus deleniti dicta dolor doloremque eius eligendi exercitationem fuga id illum incidunt inventore, iure labore libero molestiae obcaecati optio pariatur perspiciatis placeat, rerum sint suscipit unde ut voluptas voluptate voluptates voluptatibus? Animi architecto consectetur cumque deleniti dignissimos dolor ducimus explicabo illo ipsum maxime, nesciunt nisi nostrum odio sapiente sint tempora voluptatem! Iste laborum qui repellat voluptatem. Alias cumque debitis doloribus dolorum ea, eveniet facilis iure laboriosam modi nam obcaecati odit perferendis quaerat quam quidem reiciendis suscipit vel veniam voluptatem voluptatibus! Eveniet fugiat neque sint vitae voluptates? Ab accusamus ad, animi cupiditate delectus dolorum, excepturi fuga impedit incidunt inventore laudantium maiores nemo, porro qui repellendus reprehenderit saepe tempore voluptas. A aut dolorum fuga id inventore neque nisi, non sequi. Doloribus error inventore iure, quidem repellat repudiandae tenetur veritatis. A, accusantium animi aut cum distinctio doloribus eaque exercitationem facilis, incidunt itaque laboriosam molestias natus odio possimus quae ratione veritatis vero voluptas. Ab adipisci aspernatur, aut dolores ducimus ea facilis ipsam labore, laboriosam magnam officiis pariatur quaerat, quasi reiciendis rerum tenetur ullam. Ad amet, asperiores dicta dolores expedita facilis iusto magni modi, officiis optio tempora ut voluptatem!
-                </div>
-                <div class="ui  tab segment" data-tab="fifth">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad animi aperiam beatae eius et fugit hic impedit ipsam ipsum, labore libero minus nam optio praesentium quas quod sapiente sed sint sit suscipit tenetur voluptatum. Consequuntur delectus, doloremque dolorum ipsum libero nemo nihil optio quisquam ullam veritatis. Aut blanditiis consequatur cupiditate deleniti, ducimus expedita illum impedit incidunt ipsa ipsum iste molestiae porro, quam quod saepe, sed sint tempore vero vitae voluptate! Ab architecto cumque, dolor dolores non quo tempore! Blanditiis nam neque nostrum unde! Consectetur delectus excepturi fugit quos sapiente. Aliquid amet animi assumenda aut beatae consectetur corporis cumque cupiditate dicta doloremque, ducimus error est ipsum, laborum natus nesciunt nobis numquam officiis perferendis quae quis reiciendis veniam voluptate. Alias delectus facilis fuga fugiat illo molestiae, praesentium repellendus repudiandae. Aliquam amet consectetur distinctio eaque fugiat magni nemo nisi repellendus soluta unde? A ad aperiam asperiores delectus obcaecati odit rerum temporibus unde! Accusamus consequatur ea ipsa, iste magnam odio perferendis praesentium recusandae tempora voluptate. Aliquam at culpa fugiat incidunt mollitia pariatur provident quas reprehenderit similique tenetur! Ab ad, adipisci asperiores aut consectetur culpa debitis delectus doloremque eius ex fuga illo impedit libero nobis non numquam optio possimus sint sit tempora tenetur veritatis.
-                </div>
-                <div class="ui tab segment" data-tab="sixth">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt explicabo, itaque labore libero minima praesentium repudiandae tempore? Ab asperiores aut consectetur dolorem eligendi eos error fugit hic illo illum impedit itaque iure laboriosam, maiores molestiae mollitia nam nostrum numquam odit perferendis quae quam quis quos reprehenderit sequi sunt tenetur voluptates. Amet animi aperiam, consectetur cumque delectus dicta doloribus eligendi eos inventore iste laudantium molestiae natus nemo obcaecati odio, officiis provident quia reiciendis rem repudiandae saepe sequi sit soluta, tempora tempore veritatis voluptatem. Aperiam beatae, culpa ducimus laudantium nobis quis quo saepe. Assumenda consequuntur, culpa cum eius id iure! Accusantium amet commodi consequuntur culpa debitis dignissimos dolore doloremque doloribus, ea eius ex hic illum ipsa ipsum laboriosam minus necessitatibus numquam obcaecati officia officiis optio perspiciatis qui quisquam quo quos recusandae rem repudiandae soluta sunt tempora temporibus ullam vel veniam? Atque autem explicabo fuga illum numquam, sunt. Corporis placeat repudiandae sint ut.
+                    <a href="tester" class="elevatezoom-gallery" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw">
+                        <img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100" />
+                    </a>
+
+                    <a href="tester" class="elevatezoom-gallery" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw" class="slide-content"><img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100" /></a>
+
                 </div>
             </div>
         </div>
+        <div class="col-md-6">
+            <div class="tovar-price">
+                <table>
+                    <tr>
+                        <td><span>Цена:</span> 12 000 тг</td>
+                        <td><span>доход:</span> 2300 тг </td>
+                    </tr>
+                    <tr>
+                        <td><span>Цена:</span> 12 000 тг</td>
+                        <td><span>доход:</span> 2300 тг </td>
+                    </tr>
+                </table>
+            </div>
+            <a href="" class="button">Продать</a>
+            <div class="block-on">
+                <div class="on">Есть в наличии</div>
+            </div>
+            <div class="preim">
+                <ul>
+                    <li class="ship">Доставка по Казахстану</li>
+                    <li class="cart">Удобные методы оплаты</li>
+                    <li class="refund">Обмен и возврат 14 дней</li>
+                </ul>
+            </div>
+            <div class="count">
+                <p>Купили: 1278 чел </p>
+                <p>Интересовались: 2500 чел </p>
+            </div>
 
-        <br><br>
 
-        <div class="pohojie_tovary">
-            <h2>Похожие товары</h2>
-            @foreach($products as $product)
-                <div class="product-card">
-                    <div class="product-body">
-                        <div class="product-img">
-                            <img src="{{ asset('img/1dns.jpg') }}" alt="">
-                        </div>
-
-                        <div class="product-title">
-                            <a href="{{ url('/product/'.$product->id) }}">{!! $product->title !!}</a>
-                        </div>
-
-                        <div class="product-info" style="margin-top: 50px;">
-                            <button type="button" class="ui button green button-green">Купить</button>
-
-                            <button type="button" style="border: 1px solid #ccc; border-radius: 2px; padding: 4px; background: none; float: right; cursor: pointer;"><i class="heart big outline icon"></i></button>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-
-            <div class="clearfix"></div>
-        </div>
-
-        <br><br>
-
-        <div class="accessories_for_product">
-            <h2>Аксессуары</h2>
-            @foreach($products as $product)
-                <div class="product-card">
-                    <div class="product-body">
-                        <div class="product-img">
-                            <img src="{{ asset('img/1dns.jpg') }}" alt="">
-                        </div>
-
-                        <div class="product-title">
-                            <a href="{{ url('/product/'.$product->id) }}">{!! $product->title !!}</a>
-                        </div>
-
-                        <div class="product-info" style="margin-top: 50px;">
-                            <button type="button" class="ui button green button-green">Купить</button>
-
-                            <button type="button" style="border: 1px solid #ccc; border-radius: 2px; padding: 4px; background: none; float: right; cursor: pointer;"><i class="heart big outline icon"></i></button>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-
-            <div class="clearfix"></div>
         </div>
     </div>
+    <div class="tab">
 
-    <script>
-        $('#context2 .menu .item')
-                .tab({
-                    // special keyword works same as above
-                    context: 'parent'
-                })
-        ;
-    </script>
+        <ul class="tabs">
+            <li><a href="#">описание</a></li>
+            <li><a href="#">характеристики</a></li>
+            <li><a href="#">отзывы</a></li>
+            <li><a href="#">поставщик</a></li>
+            <li><a href="#">рекламировать</a></li>
+        </ul> <!-- / tabs -->
+
+        <div class="tab_content">
+
+            <div class="tabs_item">
+                <h4>Tab 01 Neque ipsum dolor.</h4>
+                <p>Consectetur adipisicing elit. Neque, repellat facilis totam ab eos distinctio sint atque maiores! Dignissimos, molestiae, rem accusantium iure vitae voluptatum voluptas repudiandae deserunt dolore quis! Quisquam mollitia eius sed.</p>
+            </div> <!-- / tabs_item -->
+
+            <div class="tabs_item">
+                <img src="https://cdn.dribbble.com/users/545884/screenshots/3576036/liberosis_--_10.png">
+                <h4>Tab02 Maiores, suscipit</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p>
+            </div> <!-- / tabs_item -->
+
+            <div class="tabs_item">
+                <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
+                <h4>Tab03</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+            </div> <!-- / tabs_item -->
+
+            <div class="tabs_item">
+                <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
+                <h4>Tab04</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+            </div> <!-- / tabs_item -->
+
+            <div class="tabs_item">
+                <div class="reklama">
+                    <div class="site">
+                        <p>Размещайте объявления на бесплатных сайтах</p>
+                    </div>
+
+                    <div class="social">
+                        <p>Продавайте через страницы в соц. сетях</p>
+
+                    </div>
+
+                    <div class="site">
+                        <p>Рекламируйте свой магазин в поисковиках</p>
+
+                    </div>
+
+                    <div class="site">
+                        <p>Делайте рекламную рассылку через мессенждеры</p>
+
+                    </div>
+                </div>
+            </div> <!-- / tabs_item -->
+
+            <div class="tabs_item">
+                <img src="https://cdn.dribbble.com/users/545884/screenshots/3557299/mo-t.png">
+                <h4>Tab06</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam vitae.</p>
+            </div> <!-- / tabs_item -->
+
+        </div> <!-- / tab_content -->
+    </div> <!-- / tab -->
 @stop
