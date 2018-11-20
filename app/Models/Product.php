@@ -11,8 +11,8 @@ class Product extends Model
         'filled', 'verified', 'views', 'article', 'images', 'created_at', 'updated_at'
     ];
 
-    public function hotSells() {
-        $hot_sells = Product::limit(10)->get();
+    public static function hotSells() {
+        $hot_sells = Product::take(4)->get();
         return $hot_sells;
     }
 }
