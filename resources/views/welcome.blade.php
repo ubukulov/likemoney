@@ -1,79 +1,411 @@
 @extends('layouts.app')
 @section('content')
-    <div class="main_banner">
-        <div class="row">
-            <div class="banner">
-                <h4 align="center">Тут будет баннер <br> 990x340</h4>
-            </div>
-
-            <div class="goods_today">
-                <h4>Товар дня <br>290x340</h4>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-
-    <div class="looking_now">
-        <h4>Сейчас смотрять</h4>
-        <div class="row">
-            @foreach($products as $product)
-            <div class="col-md-3">
-                <div class="product-item">
-                    <div class="label label-sale">Скидка 10%</div>
-                    <div class="product-img">
-                        <a href="">
-                            <img src="/img/bitmap.png">
-                        </a>
-                    </div>
-                    <div class="product-list">
-                        <div class="product-title">
-                            <span>{!! $product->title !!}</span>
-                        </div>
-                        <div class="add-to-cart">
-                            <a href="" class="cart-button">В корзину</a>
-                        </div>
-                        <div class="clrfx">
-                            <span class="price">Цена<br> <span class="price-num">129 000 тг</span> </span>
-                            <span class="income">Ваш доход<br> <span class="income-num">10 000 тг</span> </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-
-    <div class="hot-sells">
-        <h4>Хиты продаж</h4>
-        <div class="row">
-            @foreach($hotSells as $hotSell)
-                <div class="col-md-3">
+    <section id="features">
+        <div class="content">
+            <h2>Хиты продаж</h2>
+            <div class="slider responsive">
+                @foreach($products as $product)
+                <div>
                     <div class="product-item">
-                        <div class="label label-sale">Хит</div>
+                        <div class="label label-sale">Скидка 10%</div>
                         <div class="product-img">
                             <a href="">
-                                <img src="/img/bitmap.png">
+                                <img src="img/bitmap.png">
                             </a>
                         </div>
                         <div class="product-list">
-                            <div class="product-title">
-                                <span>{!! $hotSell->title !!}</span>
-                            </div>
+                            <h3>{{ $product->title }}</h3>
                             <div class="add-to-cart">
-                                <a href="" class="cart-button">В корзину</a>
+                                <a href="" class="cart-button cart-button-all">В корзину</a>
                             </div>
                             <div class="clrfx">
-                                <div>
-                                    <span class="price">Цена<br> <span class="price-num">129 000 тг</span> </span>
-                                </div>
-                                <div>
-                                    <a href="{{ url('product/'.$hotSell->id) }}" class="btn btn-danger hot-sells-a">подробнее</a>
-                                </div>
+                                <span class="price">Цена<br> <span class="price-num">129 000 ₸</span> </span>
+                                <span class="income">Ваш доход<br> <span class="income-num">10 000 ₸</span> </span>
                             </div>
                         </div>
                     </div>
                 </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="features">
+        <div class="content">
+            <h2>Новинки</h2>
+            <div class="slider responsive">
+                @foreach($products as $product)
+                <div>
+                    <div class="product-item">
+                        <div class="label label-sale">Скидка 10%</div>
+                        <div class="product-img">
+                            <a href="">
+                                <img src="img/bitmap.png">
+                            </a>
+                        </div>
+                        <div class="product-list">
+                            <h3>{{ $product->title }}</h3>
+                            <div class="add-to-cart">
+                                <a href="" class="cart-button cart-button-all">В корзину</a>
+                            </div>
+                            <div class="clrfx">
+                                <span class="price">Цена<br> <span class="price-num">129 000 ₸</span> </span>
+                                <span class="income">Ваш доход<br> <span class="income-num">10 000 ₸</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features">
+        <div class="content">
+            <h2>Акция</h2>
+            <div class="slider responsive">
+                @foreach($products as $product)
+                <div>
+                    <div class="product-item">
+                        <div class="label label-sale">Скидка 10%</div>
+                        <div class="product-img">
+                            <a href="">
+                                <img src="img/bitmap.png">
+                            </a>
+                        </div>
+                        <div class="product-list">
+                            <h3>{{ $product->title }}</h3>
+                            <div class="add-to-cart">
+                                <a href="" class="cart-button cart-button-all">В корзину</a>
+                            </div>
+                            <div class="clrfx">
+                                <span class="price">Цена<br> <span class="price-num">129 000 ₸</span> </span>
+                                <span class="income">Ваш доход<br> <span class="income-num">10 000 ₸</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features">
+        <div class="content">
+            <h2>Совместные покупки</h2>
+            <div class="slider responsive">
+
+                <div>
+                    <div class="product-item">
+                        <div class="label label-sale">Уже 9 покупок</div>
+                        <div class="product-img">
+                            <a href="">
+                                <img src="img/bitmap.png">
+                            </a>
+                        </div>
+                        <div class="product-list">
+                            <h3>Чернила GT52 Cyan for HP DeskJet GT Series Printers M0H54AE 70ml</h3>
+                            <div class="add-to-cart">
+                                <a href="" class="cart-button cart-button-all">Снизить цену</a>
+                            </div>
+                            <div class="price-all">
+                                <div class="old-price">110 000₸</div>
+                                <div class="new-price">110 000₸</div>
+                                <div class="old-price">110 000₸</div>
+                                <div class="info">Цена станет ниже <br>при наборе 20 покупателей</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <div class="label label-sale">Уже 9 покупок</div>
+                        <div class="product-img">
+                            <a href="">
+                                <img src="img/bitmap.png">
+                            </a>
+                        </div>
+                        <div class="product-list">
+                            <h3>Чернила GT52 Cyan for HP DeskJet GT Series Printers M0H54AE 70ml</h3>
+                            <div class="add-to-cart">
+                                <a href="" class="cart-button cart-button-all">Снизить цену</a>
+                            </div>
+                            <div class="price-all">
+                                <div class="old-price">110 000₸</div>
+                                <div class="new-price">110 000₸</div>
+                                <div class="old-price">110 000₸</div>
+                                <div class="info">Цена станет ниже <br>при наборе 20 покупателей</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <div class="label label-sale">Уже 9 покупок</div>
+                        <div class="product-img">
+                            <a href="">
+                                <img src="img/bitmap.png">
+                            </a>
+                        </div>
+                        <div class="product-list">
+                            <h3>Чернила GT52 Cyan for HP DeskJet GT Series Printers M0H54AE 70ml</h3>
+                            <div class="add-to-cart">
+                                <a href="" class="cart-button cart-button-all">Снизить цену</a>
+                            </div>
+                            <div class="price-all">
+                                <div class="old-price">110 000₸</div>
+                                <div class="new-price">110 000₸</div>
+                                <div class="old-price">110 000₸</div>
+                                <div class="info">Цена станет ниже <br>при наборе 20 покупателей</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <div class="label label-sale">Уже 9 покупок</div>
+                        <div class="product-img">
+                            <a href="">
+                                <img src="img/bitmap.png">
+                            </a>
+                        </div>
+                        <div class="product-list">
+                            <h3>Чернила GT52 Cyan for HP DeskJet GT Series Printers M0H54AE 70ml</h3>
+                            <div class="add-to-cart">
+                                <a href="" class="cart-button cart-button-all">Снизить цену</a>
+                            </div>
+                            <div class="price-all">
+                                <div class="old-price">110 000₸</div>
+                                <div class="new-price">110 000₸</div>
+                                <div class="old-price">110 000₸</div>
+                                <div class="info">Цена станет ниже <br>при наборе 20 покупателей</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <div class="label label-sale">Уже 9 покупок</div>
+                        <div class="product-img">
+                            <a href="">
+                                <img src="img/bitmap.png">
+                            </a>
+                        </div>
+                        <div class="product-list">
+                            <h3>Чернила GT52 Cyan for HP DeskJet GT Series Printers M0H54AE 70ml</h3>
+                            <div class="add-to-cart">
+                                <a href="" class="cart-button cart-button-all">Снизить цену</a>
+                            </div>
+                            <div class="price-all">
+                                <div class="old-price">110 000₸</div>
+                                <div class="new-price">110 000₸</div>
+                                <div class="old-price">110 000₸</div>
+                                <div class="info">Цена станет ниже <br>при наборе 20 покупателей</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="top-category">
+        <h2>Популярные категории</h2>
+        <div class="slider responsive-1">
+
+            <div>
+                <div class="category-item">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="category-item orange-grd">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="category-item blue-grd">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="category-item">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="category-item">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="category-item">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="category-item">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="category-item">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="category-item">
+                    <div class="category-img">
+                        <a href="">
+                            <img src="https://a.icons8.com/vcradgZY/UNCRGr/bitmap.png">
+                        </a>
+                    </div>
+                    <div class="category-list">
+
+
+                        <div class="clrfx">
+                            <h3>Видеокарты</h3>
+
+                            <div class="add-to-links-category">
+                                <a href="" class="">Перейти</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 @stop
