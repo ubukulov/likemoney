@@ -1,56 +1,166 @@
 @extends('layouts.app')
 @section('content')
+
+    <div class="tovar">
+        <h3>{{ $product->title }}</h3>
+        <p class="artikul">Артикул {{ $product->article }}</p>
+    </div>
     <div class="row">
+
+        <div class="clrfx"></div>
         <div class="col-md-6">
 
             <div class="tovar">
-                <h3>Чернила GT52 Cyan for HP <br> DeskJet GT Series Printers <br>M0H54AE 70ml</h3>
-                <p class="artikul">артикул: 12178</p>
+
             </div>
             <div class="clrfx"></div>
+            @if(empty($product->images))
             <div class="zoom-left">
-                <img style="border:1px solid #e8e8e6;" id="zoom_03" src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw"  />
+                <div style="height:400px;width:400px;" class="zoomWrapper"><img style="border: 1px solid rgb(232, 232, 230); position: absolute;" id="zoom_03" src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw"></div>
 
 
 
                 <div class="clearfix"></div>
 
-                <div id="gallery_01" style="width=500px; float:left; ">
+                <div id="gallery_01" style="width:500px; float:left; ">
 
                     <a href="#" class="elevatezoom-gallery active" data-update="" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://www.elevateweb.co.uk/wp-content/themes/radial/zoom/images/large/image1.jpg">
-                        <img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100" /></a>
+                        <img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100"></a>
 
-                    <a href="#" class="elevatezoom-gallery" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw"><img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100" /></a>
+                    <a href="#" class="elevatezoom-gallery" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw"><img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100"></a>
 
                     <a href="tester" class="elevatezoom-gallery" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw">
-                        <img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100" />
+                        <img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100">
                     </a>
 
-                    <a href="tester" class="elevatezoom-gallery" data-image="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" data-zoom-image="https://static.technodom.kz/medias/103578-1.jpg?context=bWFzdGVyfGltYWdlc3w2ODAzMzV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJmL2g2Mi8xMTg1ODA5MDQyNjM5OC5qcGd8ZTkxOGI5MjgxODRjZWZlNjM5ZmJkYTJjNDY2NjViYzdmMGE2NDljMmZlNTk0MWMwZmQwNDI2OGE4YmVjNTA0Mw" class="slide-content"><img src="https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy" width="100" /></a>
 
                 </div>
             </div>
+            @else
+                @php
+                    $images = explode(",", $product->images);
+                    if(isset($images[0])) {
+                        $logo = "/uploads/alser/".$images[0];
+                    }else{
+                        $logo = "https://static.technodom.kz/medias/103578-1qwes.jpg-Default-WorkingFormat-400Wx400HConversionFormat?context=bWFzdGVyfGltYWdlc3w1NjMwMXxpbWFnZS9qcGVnfGltYWdlcy9oODEvaDc3LzExODU4MDkwNjg4NTQyLmpwZ3w0OTBjMDk0ODcyOTM2MGM3ZjU4Y2RkN2ExYmIxYzdlNTIzZjI2YTc0MTMxY2VmNjViOGRjNzhhMmI2YTkzOTUy";
+                    }
+                @endphp
+                <div class="zoom-left">
+                    <div style="height:400px;width:400px;" class="zoomWrapper"><img style="border: 1px solid rgb(232, 232, 230); position: absolute;" id="zoom_03" src="{{ $logo  }}" data-zoom-image="{{ $logo }}"></div>
+
+                    <div class="clearfix"></div>
+
+                    <div id="gallery_01" style="width:500px; float:left; ">
+                        @foreach($images as $key=>$image)
+                        <a href="#" class="elevatezoom-gallery @if($key == 0) active" @endif data-update="" data-image="{{ asset('uploads/alser/'.$image) }}" data-zoom-image="{{ asset('uploads/alser/'.$image) }}">
+                            <img src="{{ asset('uploads/alser/'.$image) }}" width="100"></a>
+
+                        @endforeach
+                    </div>
+                </div>
+            @endif
         </div>
         <div class="col-md-6">
             <div class="tovar-price">
                 <table>
-                    <tr>
-                        <td class="price-td"><span>Розница:</span> 12 000 ₸</td>
+                    <tbody><tr>
+                        <td class="price-td"><span>Розница:</span> 12000 ₸</td>
                         <td><img src="img/wallet.png" alt=""> 2300 ₸ </td>
                     </tr>
                     <tr>
-                        <td class="price-td"><span>Опт от 10шт:</span> 12 000 ₸</td>
+                        <td class="price-td"><span>Опт (от 10 шт):</span> 12000 ₸</td>
                         <td><img src="img/wallet.png" alt=""> 2300 ₸ </td>
                     </tr>
-                </table>
+                    </tbody></table>
             </div>
-            <a href="" class="button">Продать</a>
+            <a href="" class="button"><span>Продать</span></a>
             <div class="block-on">
                 <div class="on">Есть в наличии</div>
             </div>
             <div class="count">
                 <p>Купили: 1278 чел </p>
                 <p>Интересовались: 2500 чел </p>
+            </div>
+            <div class="product-description__columns">
+                <div class="product-description__column">
+                    <a href="/productsComparison/view" style="visibility: hidden;" id="pageProductsComparionUrl"></a>
+
+                    <div class="basetile__to-compare product-icons-masked">
+                        <input id="toCompare70820" type="checkbox" name="toCompare" data-action="/productsComparison/add?productCode=70820&amp;categoryName=%d0%a1%d0%bc%d0%b0%d1%80%d1%82%d1%84%d0%be%d0%bd%d1%8b">
+                        <label for="toCompare70820" class="product-icons-masked__label" title="К сравнению">
+                            <span class="product-icons-masked__i product-icons-masked__i_tocompare"></span>
+                            К сравнению</label>
+                    </div><a name="wishlist"></a>
+                    <!-- REPLACE W/ TRUE URL PATHs: .../favorite-products/add -->
+
+                    <div class="basetile__to-favorite-products product-icons-masked">
+                        <div class="product-icons-masked__label">
+                            <a href="#" class="js-ch-popup favoriteProductsPage" data-id="tpLogin" title="Добавить в мои желания">
+                                <span class="product-icons-masked__i product-icons-masked__i_tofav"></span>
+                                Добавить в мои желания</a>
+                        </div>
+                    </div>
+                    <script id="tpLoginwishlist" type="text/x-mustache-template">
+                        <div class="popup-node">
+                            <div class="login-popup__content">
+                                <div class="popup-error__message hidden">
+                                    <div class="alert negative noSpace">Неверно введен адрес электронной почты или пароль.</div>
+                                </div>
+                                <div class="popup-title">Вход на сайт</div>
+                                <div class="ch-col">
+                                    <div class="form_field-elements">
+                                        <div class="control-group">
+                                            <label class="ch-line__name control-label" for="j_username">Электронная почта</label>
+                                            <div class="controls ch-line-field">
+                                                <div class="ch-custom-field">
+                                                    <input id="j_username" name="j_username" class="ch-field__inp text" type="text" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="ch-line__name control-label " for="j_password">Пароль</label>
+                                            <div class="controls ch-line-field">
+                                                <div class="ch-custom-field">
+                                                    <input id="j_password" name="j_password" class="ch-field__inp text" type="password" value="">
+                                                </div>
+                                            </div>
+                                            <a href="#" class="popup-sub__link js-ch-popup" data-id="tpRestoreEmail">Я забыл пароль</a>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="ajax" value="yes" />
+                                    <a href="#" class="popup-btn cus-btn cus-btn__full js-popup-send-btn" data-name="login" data-type="json" data-url="/checkout/j_spring_security_check" data-place="wishlist" data-redirect="/my-account/add-favorite-products?productCode=70820&categoryName=%d0%a1%d0%bc%d0%b0%d1%80%d1%82%d1%84%d0%be%d0%bd%d1%8b">Войти</a>
+                                </div>
+                                <div><a class="popup-sub__link" href="/login">Я еще не зарегистрирован</a></div>
+                                <div class="popup-social__login">
+                                    <p>Авторизоваться через соц. сети</p>
+                                    <div class="popupSocialLinks">
+                                        <div class="social-likes_sq">
+                                            <a class="social-login" href="#" onclick="ACC.socialLogin('facebook', '1657912167773130', 'https://www.technodom.kz/social2/connect-facebook');return false">
+                                                <span class="social-likes__icon social-likes__icon_facebook"></span>
+                                            </a>
+                                            <a class="social-login social-login_vk" href="#" onclick="ACC.socialLogin('vkontakte', '4813149', 'https://www.technodom.kz/social2/connect-vkontakte');return false">
+                                                <span class="social-likes__icon social-likes__icon_vkontakte"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </script>
+
+                    <div class="product-icons-masked product-icons-masked_active" id="toMonitoringPriceOn" data-monitoringpriceid="70820" style="display:none">
+                        <div class="product-icons-masked__label product-icons-masked__label_active">
+                            <span class="product-icons-masked__i product-icons-masked__i_towhitelist product-icons-masked__i_active"></span>
+                            В листе ожидания</div>
+                    </div>
+                    <div class="basetile__to-favorite-products product-icons-masked product-icons-masked" id="toMonitoringPriceWrapper">
+                        <label id="toMonitoringPrice" waitingredirect="false" for="toMonitoringPrice70820" data-monitoringprice="70820" data-codeproduct="70820" class="product-icons-masked__label">
+                            <a href="#" class="js-ch-popup" data-url="/catalog/smartphones/p/gsm-huawei-p-lite-gb-thx-pink-70820/addToListMonitoring" data-id="tpGetEmailForMonitoringProduct" title="Следить за ценой">
+                                <span class="product-icons-masked__i product-icons-masked__i_towhitelist"></span>
+                                Следить за ценой</a>
+                        </label>
+                    </div>
+                </div>
             </div>
             <div class="preim">
                 <ul>
@@ -66,8 +176,8 @@
     </div>
     <div class="tab">
 
-        <ul class="tabs">
-            <li><a href="#">описание</a></li>
+        <ul class="tabs active">
+            <li class="current"><a href="#">описание</a></li>
             <li><a href="#">характеристики</a></li>
             <li><a href="#">отзывы</a></li>
             <li><a href="#">поставщик</a></li>
@@ -77,14 +187,11 @@
         <div class="tab_content">
 
             <div class="tabs_item">
-                <h4>Tab 01 Neque ipsum dolor.</h4>
-                <p>Consectetur adipisicing elit. Neque, repellat facilis totam ab eos distinctio sint atque maiores! Dignissimos, molestiae, rem accusantium iure vitae voluptatum voluptas repudiandae deserunt dolore quis! Quisquam mollitia eius sed.</p>
+                {!! $product->full_text !!}
             </div> <!-- / tabs_item -->
 
             <div class="tabs_item">
-                <img src="https://cdn.dribbble.com/users/545884/screenshots/3576036/liberosis_--_10.png">
-                <h4>Tab02 Maiores, suscipit</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, suscipit, eaque asperiores neque numquam nam possimus dolorem ipsa aspernatur reiciendis?</p>
+                {!! $product->description !!}
             </div> <!-- / tabs_item -->
 
             <div class="tabs_item">
@@ -105,10 +212,10 @@
                         <p>Размещайте объявления <br> на бесплатных сайтах</p>
                         <div class="social-ads">
                             <img src="img/olx.png" alt="">
-                            <img src="img/market.png" alt=""  width="110"><br>
-                            <img src="img/alfa.png" alt=""  width="">
-                            <img src="img/kolesa.png" alt=""  width="90">
-                            <img src="img/forte.png" alt=""  width="200">
+                            <img src="img/market.png" alt="" width="110"><br>
+                            <img src="img/alfa.png" alt="" width="">
+                            <img src="img/kolesa.png" alt="" width="90">
+                            <img src="img/forte.png" alt="" width="200">
                         </div>
                     </div>
 
@@ -117,7 +224,7 @@
                             <p>Продавайте через<br> страницы в соц. сетях</p>
                             <div class="social-icon">
                                 <img src="img/vk.png" alt="" width="50">
-                                <img src="img/instagram.png" alt=""  height="50">
+                                <img src="img/instagram.png" alt="" height="50">
                                 <img src="img/fb.png" alt="" height="50">
                             </div>
 
@@ -150,61 +257,5 @@
 
         </div> <!-- / tab_content -->
     </div> <!-- / tab -->
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="footer">
-        <div class="body" data-v-474839c9="">
-            <div class="body-wrapper" data-v-474839c9="">
-                <div class="col" data-v-474839c9="">
-                    <div class="col-logo" data-v-474839c9=""><img src="img/logo-white.png" alt="Технодом" class="col-logo-image" data-v-474839c9=""></div>
 
-                    <div class="col-body" data-v-474839c9="">
-                        <div class="logo">
-                            <img src="img/logo-white.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col" data-v-474839c9="">
-                    <div class="col-head col-head-fixed" data-v-474839c9="">
-                        Информация
-                    </div>
-                    <div id="footer-mobile-col-body-1" class="col-body" data-v-474839c9="" style="padding-bottom: 20px; display: flex;"><a href="/company" class="link" data-v-474839c9="">
-                            О нас
-                        </a> <a href="/care-of-clients" class="link" data-v-474839c9="">
-                            Для поставщиков
-                        </a> <a href="/lcms/v" class="link" data-v-474839c9="">
-                            Как зарабатывать
-                        </a> <a href="/corporate_sales" class="link" data-v-474839c9="">
-                            Новости
-                        </a> </div> <svg id="footer-mobile-col-arrow-1" width="25px" height="30px" class="col-arrow active" data-v-474839c9="">
-                        <path d="M 9 18.8462 C 9 19.4834 9.5373 20 10.2 20 C 10.8627 20 11.4 19.4834 11.4 18.8462 C 11.4 18.2089 10.8627 17.6923 10.2 17.6923 C 9.5373 17.6923 9 18.2089 9 18.8462 ZM 13.6 15 C 13.6 15.6373 14.1373 16.1538 14.8 16.1538 C 15.4627 16.1538 16 15.6373 16 15 C 16 14.3627 15.4627 13.8462 14.8 13.8462 C 14.1373 13.8462 13.6 14.3627 13.6 15 ZM 9 11.1538 C 9 11.7911 9.5373 12.3077 10.2 12.3077 C 10.8627 12.3077 11.4 11.7911 11.4 11.1538 C 11.4 10.5166 10.8627 10 10.2 10 C 9.5373 10 9 10.5166 9 11.1538 Z" fill="#6C6C6C" data-v-474839c9=""></path>
-                    </svg>
-                </div>
-                <div class="col" data-v-474839c9="">
-                    <div class="col-head col-head-fixed" data-v-474839c9="">
-                        Дополнительно
-                    </div>
-                    <div id="footer-mobile-col-body-2" class="col-body" data-v-474839c9="" style="padding-bottom: 20px; display: flex;"><a href="/lcms/t/promo" class="link" data-v-474839c9="">
-                            Для инвесторов
-                        </a> <a href="/lcms/t/news" class="link" data-v-474839c9="">
-                            Обратная связь
-                        </a> <a href="/magazine" class="link" data-v-474839c9="">
-                            Контакты
-                        </a> </div> <svg id="footer-mobile-col-arrow-2" width="25px" height="30px" class="col-arrow active" data-v-474839c9="">
-                        <path d="M 9 18.8462 C 9 19.4834 9.5373 20 10.2 20 C 10.8627 20 11.4 19.4834 11.4 18.8462 C 11.4 18.2089 10.8627 17.6923 10.2 17.6923 C 9.5373 17.6923 9 18.2089 9 18.8462 ZM 13.6 15 C 13.6 15.6373 14.1373 16.1538 14.8 16.1538 C 15.4627 16.1538 16 15.6373 16 15 C 16 14.3627 15.4627 13.8462 14.8 13.8462 C 14.1373 13.8462 13.6 14.3627 13.6 15 ZM 9 11.1538 C 9 11.7911 9.5373 12.3077 10.2 12.3077 C 10.8627 12.3077 11.4 11.7911 11.4 11.1538 C 11.4 10.5166 10.8627 10 10.2 10 C 9.5373 10 9 10.5166 9 11.1538 Z" fill="#6C6C6C" data-v-474839c9=""></path>
-                    </svg>
-                </div>
-                <div class="col" data-v-474839c9="">
-                    <div class="col-head col-head-fixed" data-v-474839c9="">
-                        Счетчик
-                    </div>
-                    <p>Создано бизнесов:</p>
-                    <p>110345</p>
-                    <p>Зарегистрировано клиентов:</p>
-                    <p>180516</p>
-                </div>
-            </div>
-        </div>
 @stop
