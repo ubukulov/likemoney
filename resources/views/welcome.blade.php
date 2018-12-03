@@ -10,13 +10,13 @@
                         <div class="label label-sale">Скидка 10%</div>
                         <div class="product-img">
                             <a href="{{ url('product/'.$product->id) }}">
-                                <img src="img/bitmap.png">
+                                <img src="{{ asset('img/bitmap.png') }}">
                             </a>
                         </div>
                         <div class="product-list">
                             <a href="{{ url('product/'.$product->id) }}"><h3>{{ $product->title }}</h3></a>
                             <div class="add-to-cart">
-                                <a href="" class="cart-button cart-button-all">В корзину</a>
+                                <a href="{{ url('add/'.$product->id) }}" class="cart-button cart-button-all">В корзину</a>
                             </div>
                             <div class="clrfx">
                                 <span class="price">Цена<br> <span class="price-num">129 000 ₸</span> </span>

@@ -66,6 +66,7 @@ section h2 {
     border-radius: 50px;
     width: 350px;
     margin: 45px auto;
+    font-size: 24px;
 }
 
 .category-wrap {
@@ -2800,7 +2801,7 @@ td {
     justify-content: space-between;
 }
 
-.client-info p{
+.client-info p {
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -2856,23 +2857,23 @@ td {
 
 /* New*/
 
-.tabs_item.new-item{
+.tabs_item.new-item {
     display: flex;
     justify-content: space-between;
 }
 
-.new{
+.new {
     border: 1px solid #C8C8C8;
     border-radius: 10px;
-     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
--moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
     padding: 20px;
     position: relative;
     text-align: center;
 }
 
-.new span{
+.new span {
     position: absolute;
     top: -5px;
     left: -10px;
@@ -2886,7 +2887,315 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
     font-weight: 700;
 }
 
-.new-title{
+.new-title {
     margin-bottom: 20px;
     font-weight: 700;
+}
+
+.cart-btn {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.cart-btn a {
+    vertical-align: top;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 25px;
+    margin-right: 45px;
+}
+
+a.btn-red {
+    background-color: #c00000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff2d2d), to(#c00000));
+    background-image: linear-gradient(#ff2d2d, #c00000);
+    color: #fff;
+
+}
+
+
+
+.btn-white {
+    background-color: #fff;
+    border: 1px solid #000;
+
+}
+
+.often .slick-prev {
+    left: 0;
+}
+
+.often .slick-next {
+    right: 0;
+}
+
+.often h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+.btn-group,
+.btn-group-vertical {
+    display: block;
+}
+
+.col-md-4 {
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.col-md-4 img {
+    height: auto;
+}
+
+body .carousel-control-prev-icon,
+body .carousel-indicators li,
+body .carousel-control-next-icon {
+    background-color: #000;
+}
+
+span.carousel-control-prev-icon {
+    position: relative;
+    bottom: 40px;
+    right: 40px;
+}
+
+span.carousel-control-next-icon {
+    position: relative;
+    bottom: 40px;
+}
+
+.card-img-top {
+    width: auto;
+}
+
+.slider_info {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.carousel-inner {
+    padding-bottom: 45px;
+}
+
+.carousel .cart-button-all {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.carousel-control-prev {
+    left: -60px;
+}
+
+.carousel-control-next {
+    right: -60px;
+}
+
+
+
+.tab-wrapper {}
+
+.tab-menu li {
+    background-color: #fff;
+    display: inline-block;
+    line-height: 20px;
+    padding: 1px 10px 5px;
+    border: 1px solid #e2e2e2;
+    color: #000;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.tab-menu li:hover {
+    color: #464646;
+}
+
+.tab-menu li.active {
+    background-color: #1d1d1d;
+    color: #fff;
+    border-color: #1d1d1d;
+}
+
+.tab-menu li.active:hover {}
+
+
+.tab-content > div {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px;
+    min-height: 200px;
+}
+
+.line {
+    position: absolute;
+    width: 0;
+    height: 7px;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+}
+
+
+/* CART.HTML */
+
+
+.input-number {
+    width: 40px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+    border: 1px solid #ccc;
+    height: 40px;
+    user-select: none;
+}
+
+.input-number-decrement,
+.input-number-increment {
+    display: inline-block;
+    width: 25px;
+    line-height: 38px;
+    background: #f1f1f1;
+    color: #444;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-number-decrement:active,
+.input-number-increment:active {
+    background: #ddd;
+}
+
+.input-number-decrement {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-number-increment {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+
+.table-items .table-header th {
+    padding-top: .38462em;
+    padding-bottom: .38462em;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.table-items .table-item td {
+    padding-top: .76923em;
+    padding-bottom: .76923em;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.text-color-silver {
+    font-size: 13px;
+    color: #ccc
+}
+
+.table-items .table-item-image {
+    overflow: hidden;
+    width: 4.61538em;
+}
+
+/* The Close Button */
+.close {
+    color: #4b4b4b;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.box-float-right,
+.box-right,
+.float-box-right {
+    float: right;
+}
+
+.table-items {
+    width: 100%;
+}
+
+.table-footer {
+    background-color: #eee;
+}
+
+.table-footer.custome-padding > tr > td {
+    padding: 10px 36px;
+    border-radius: 2px;
+}
+
+.bg-gray-light,
+.bg-lightgray,
+[data-readonly*=bg-gray-light][readonly] {
+    background-color: #f5f5f5;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.checked [data-checked*=mhbspace-40],
+.checked[data-checked*=mhbspace-40],
+.mhbspace-40,
+[data-hover*=mhbspace-40]:hover,
+input:checked [data-checked*=mhbspace-40],
+input:checked[data-checked*=mhbspace-40] {
+    margin-bottom: 40px;
+}
+
+.checked [data-checked*=phspace-20],
+.checked[data-checked*=phspace-20],
+.phspace-20,
+[data-hover*=phspace-20]:hover,
+input:checked [data-checked*=phspace-20],
+input:checked[data-checked*=phspace-20] {
+    padding-top: 1.53846em;
+    padding-bottom: 1.53846em;
+}
+
+.checked [data-checked*=pvspace-30],
+.checked[data-checked*=pvspace-30],
+.pvspace-30,
+[data-hover*=pvspace-30]:hover,
+input:checked [data-checked*=pvspace-30],
+input:checked[data-checked*=pvspace-30] {
+    padding-left: 2.30769em;
+    padding-right: 2.30769em;
+}
+
+.three-quarters-of-parent {
+    width: 75%;
+}
+
+.box-center,
+.center-box {
+    margin-left: auto;
+    margin-right: auto;
 }

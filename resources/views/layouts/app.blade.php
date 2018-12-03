@@ -62,7 +62,7 @@
 <section class="block1">
     <div class="wrap">
         <div class="logo-head">
-            <img src="img/logo.png" alt="">
+            <a href="/"><img src="{{ asset('img/logo.png') }}" alt=""></a>
         </div>
         <div class="info-shop">
             <a href="" class="create_shop">+ Создать магазин</a>
@@ -79,25 +79,26 @@
 
         <div class="button-group main-nav">
             <div title="Желания" class="favorite button-group__butt">
-                <img src="img/favorite-heart-button.png" alt="">
+                <img src="{{ asset('img/favorite-heart-button.png') }}" alt="">
             </div>
             <div title="Корзина" class="shopping-cart button-group__butt">
-                <img src="img/shopping-cart.png" alt="">
+                <a href="{{ route('cart.index') }}">
+                    <img src="{{ asset('img/shopping-cart.png') }}" alt="">
+                </a>
             </div>
-            <a title="Профиль" class="user button-group__butt btn cd-signin" href="#0">
-                <img src="img/user.png" alt="">
+            <a title="Профиль" class="user button-group__butt btn cd-signin" @if(Auth::check()) href="{{ route('user.cabinet') }}" @else href="#0" @endif>
+                <img src="{{ asset('img/user.png') }}" alt="">
             </a>
 
         </div>
     </div>
 
 </section>
-
 <div class="category">
     <div id="common-home" class="category-wrap">
         <div class="row">
+            @if(\Route::currentRouteName() != 'catalog.index')
             <div class="col-md-3 col-sm-3 col-xs-12">
-
                 <div class="header__container ">
                     <div id="header" class="tda-header header">
                         <div class="yCmsComponent menu-fixed">
@@ -3046,11 +3047,10 @@
                     </div>
 
                 </div>
-
             </div>
+            @endif
 
-
-            <div class="col-md-9 col-sm-9">
+            <div @if(\Route::currentRouteName() != 'catalog.index') class="col-md-9 col-sm-9" @else class="col-md-12 col-sm-12" @endif>
                 @yield('content')
             </div>
         </div>
@@ -3060,11 +3060,11 @@
     <div class="body" data-v-474839c9="">
         <div class="body-wrapper" data-v-474839c9="">
             <div class="col" data-v-474839c9="">
-                <div class="col-logo" data-v-474839c9=""><img src="img/logo.png" alt="Технодом" class="col-logo-image" data-v-474839c9=""></div>
+                <div class="col-logo" data-v-474839c9=""><img src="{{ asset('img/logo.png') }}" alt="Технодом" class="col-logo-image" data-v-474839c9=""></div>
 
                 <div class="col-body" data-v-474839c9="">
                     <div class="logo">
-                        <img src="img/logo-white.png" alt="">
+                        <img src="{{ asset('img/logo-white.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -3112,117 +3112,7 @@
 </div>
 
 
-<div class="cd-user-modal">
-    <!-- this is the entire modal form, including the background -->
-    <div class="cd-user-modal-container">
-        <!-- this is the container wrapper -->
-        <ul class="cd-switcher">
-            <li><a href="#0">Авторизация</a></li>
-            <li><a href="#0">Регистрация</a></li>
-        </ul>
-
-        <div id="cd-login">
-            <!-- log in form -->
-            <form class="cd-form">
-                <p class="fieldset">
-                    <label class="image-replace cd-phone" for="signin-phone">Номер мобильного</label>
-                    <input class="full-width has-padding has-border" id="signin-email" type="tel" placeholder="Номер мобильного">
-                    <span class="cd-error-message">Ошибка</span>
-                </p>
-
-                <p class="fieldset">
-                    <label class="image-replace cd-password" for="signin-password">Пароль</label>
-                    <input class="full-width has-padding has-border" id="signin-password" type="text" placeholder="Пароль">
-                    <a href="#0" class="hide-password">скрыть</a>
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
-
-                <p class="fieldset">
-                    <input type="checkbox" id="remember-me" checked>
-                    <label for="remember-me">запомнить меня</label>
-                </p>
-
-                <p class="fieldset">
-                    <input class="full-width" type="submit" value="Войти">
-                </p>
-            </form>
-
-            <p class="cd-form-bottom-message"><a href="#0">Забыли пароль?</a></p>
-            <!-- <a href="#0" class="cd-close-form">Close</a> -->
-        </div> <!-- cd-login -->
-
-        <div id="cd-signup">
-            <!-- sign up form -->
-            <form class="cd-form">
-                <p class="fieldset">
-                    <label class="image-replace cd-username" for="signup-username">Ф.И.О</label>
-                    <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Ф.И.О">
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
-
-                <p class="fieldset">
-                    <label class="image-replace cd-calendar" for="signup-date">Дата рождения</label>
-                    <input class="full-width has-padding has-border" id="signup-username" type="date" placeholder="Дата рождения">
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
-                <p class="fieldset">
-                    <label class="image-replace cd-phone" for="signin-phone">Номер мобильного</label>
-                    <input class="full-width has-padding has-border" id="signin-email" type="tel" placeholder="Номер мобильного">
-                    <span class="cd-error-message">Ошибка</span>
-                </p>
-                <p class="fieldset">
-                    <label class="image-replace cd-email" for="signup-email">E-mail</label>
-                    <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
-
-                <p class="fieldset">
-                    <label class="image-replace cd-password" for="signup-password">Пароль</label>
-                    <input class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Пароль">
-                    <a href="#0" class="hide-password">Скрыть</a>
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
-                <p class="fieldset">
-                    <label class="image-replace cd-password" for="signup-password">Подтверждение пароля</label>
-                    <input class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Подтверждение пароля">
-                    <a href="#0" class="hide-password">Скрыть</a>
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
-
-                <p class="fieldset">
-                    <input type="checkbox" id="accept-terms">
-                    <label for="accept-terms">*Проходя регистрация, Вы автоматически соглашаетесь с <a href="#0">публичной офертой</a></label>
-                </p>
-
-                <p class="fieldset">
-                    <input class="full-width has-padding" type="submit" value="Поехали!">
-                </p>
-            </form>
-
-            <!-- <a href="#0" class="cd-close-form">Close</a> -->
-        </div> <!-- cd-signup -->
-
-        <div id="cd-reset-password">
-            <!-- reset password form -->
-            <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-            <form class="cd-form">
-                <p class="fieldset">
-                    <label class="image-replace cd-email" for="reset-email">E-mail</label>
-                    <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
-                    <span class="cd-error-message">Error message here!</span>
-                </p>
-
-                <p class="fieldset">
-                    <input class="full-width has-padding" type="submit" value="Reset password">
-                </p>
-            </form>
-
-            <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
-        </div> <!-- cd-reset-password -->
-        <a href="#0" class="cd-close-form">Close</a>
-    </div> <!-- cd-user-modal-container -->
-</div> <!-- cd-user-modal -->
+@include('modal.sign')
 
 <!-- Trigger/Open The Modal -->
 <button id="myBtn">Open Modal</button>
@@ -3255,7 +3145,7 @@
                 <td class="table-item-image">
 
                     <a rel="imageGroup-291004" href="">
-                        <img src="img/small/bitmap.png" width="80">
+                        <img src="{{ asset('img/small/bitmap.png') }}" width="80">
                     </a>
 
                 </td>
@@ -3536,7 +3426,7 @@
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script src="js/main.js"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 
 
 </body>

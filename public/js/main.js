@@ -33,7 +33,7 @@ $(document).ready(function() {
                 slidesToScroll: 2,
                 dots: true,
                 infinite: true,
-                
+
             }
         }, {
             breakpoint: 480,
@@ -47,7 +47,7 @@ $(document).ready(function() {
             }
         }]
     });
-    
+
     $('.responsive-1').slick({
         // dots: true,
         infinite: true,
@@ -81,7 +81,7 @@ $(document).ready(function() {
                 slidesToScroll: 2,
                 dots: true,
                 infinite: true,
-                
+
             }
         }, {
             breakpoint: 480,
@@ -95,27 +95,35 @@ $(document).ready(function() {
             }
         }]
     });
-    
-    
+
+
 
 
 });
 
-$(document).ready(function() { 
+// Carousel Auto-Cycle
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });
 
-	(function ($) { 
+
+$(document).ready(function() {
+
+	(function ($) {
 		$('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
-		
-		$('.tab ul.tabs li a').click(function (g) { 
-			var tab = $(this).closest('.tab'), 
+
+		$('.tab ul.tabs li a').click(function (g) {
+			var tab = $(this).closest('.tab'),
 				index = $(this).closest('li').index();
-			
+
 			tab.find('ul.tabs > li').removeClass('current');
 			$(this).closest('li').addClass('current');
-			
+
 			tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
 			tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
-			
+
 			g.preventDefault();
 		} );
 	})(jQuery);
@@ -144,7 +152,7 @@ jQuery(document).ready(function($){
 			// on mobile close submenu
 			$main_nav.children('ul').removeClass('is-visible');
 			//show modal layer
-			$form_modal.addClass('is-visible');	
+			$form_modal.addClass('is-visible');
 			//show the selected form
 			( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
 		}
@@ -155,7 +163,7 @@ jQuery(document).ready(function($){
 	$('.cd-user-modal').on('click', function(event){
 		if( $(event.target).is($form_modal) || $(event.target).is('.cd-close-form') ) {
 			$form_modal.removeClass('is-visible');
-		}	
+		}
 	});
 	//close modal when clicking the esc keyboard button
 	$(document).keyup(function(event){
@@ -174,14 +182,14 @@ jQuery(document).ready(function($){
 	$('.hide-password').on('click', function(){
 		var $this= $(this),
 			$password_field = $this.prev('input');
-		
+
 		( 'password' == $password_field.attr('type') ) ? $password_field.attr('type', 'text') : $password_field.attr('type', 'password');
 		( 'Hide' == $this.text() ) ? $this.text('Show') : $this.text('Показать');
 		//focus and move cursor to the end of input field
 		$password_field.putCursorAtEnd();
 	});
 
-	//show forgot-password form 
+	//show forgot-password form
 	$forgot_password_link.on('click', function(event){
 		event.preventDefault();
 		forgot_password_selected();
@@ -215,15 +223,15 @@ jQuery(document).ready(function($){
 		$form_forgot_password.addClass('is-selected');
 	}
 
-	//REMOVE THIS - it's just to show error messages 
-	$form_login.find('input[type="submit"]').on('click', function(event){
+	//REMOVE THIS - it's just to show error messages
+	/*$form_login.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
 		$form_login.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
 	});
 	$form_signup.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
 		$form_signup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
-	});
+	});*/
 
 
 	//IE9 placeholder fallback
@@ -291,7 +299,7 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal 
+// When the user clicks on the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -307,3 +315,37 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+$(document).ready(function() {
+
+  var $wrapper = $('.tab-wrapper'),
+      $allTabs = $wrapper.find('.tab-content > div'),
+      $tabMenu = $wrapper.find('.tab-menu li'),
+      $line = $('<div class="line"></div>').appendTo($tabMenu);
+
+  $allTabs.not(':first-of-type').hide();
+  $tabMenu.filter(':first-of-type').find(':first').width('100%')
+
+  $tabMenu.each(function(i) {
+    $(this).attr('data-tab', 'tab'+i);
+  });
+
+  $allTabs.each(function(i) {
+    $(this).attr('data-tab', 'tab'+i);
+  });
+
+  $tabMenu.on('click', function() {
+
+    var dataTab = $(this).data('tab'),
+        $getWrapper = $(this).closest($wrapper);
+
+    $getWrapper.find($tabMenu).removeClass('active');
+    $(this).addClass('active');
+
+    $getWrapper.find('.line').width(0);
+    $(this).find($line).animate({'width':'100%'}, 'fast');
+    $getWrapper.find($allTabs).hide();
+    $getWrapper.find($allTabs).filter('[data-tab='+dataTab+']').show();
+  });
+
+});//end ready

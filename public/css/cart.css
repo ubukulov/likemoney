@@ -1,0 +1,2304 @@
+@charset "UTF-8";
+
+.content-main.registration .columns:after,
+.content-main.registration .columns:before,
+.page-order .columns:after,
+.page-order .columns:before {
+    content: " ";
+    display: table
+}
+
+.content-main.registration .columns:after,
+.page-order .columns:after {
+    clear: both
+}
+
+.content-main.registration .columns > .column.left,
+.page-order .columns > .column.left {
+    float: left
+}
+
+.content-main.registration .columns-revers > .column.right,
+.page-order .columns-revers > .column.right {
+    float: right
+}
+
+.content-main.registration .columns-page > .column-page.left,
+.page-order .columns-page > .column-page.left {
+    width: 250px
+}
+
+.content-main.registration .columns-page > .column-page.right,
+.page-order .columns-page > .column-page.right {
+    margin-left: 260px
+}
+
+.content-main.registration .columns-page-revers:after,
+.content-main.registration .columns-page-revers:before,
+.page-order .columns-page-revers:after,
+.page-order .columns-page-revers:before {
+    content: " ";
+    display: table
+}
+
+.content-main.registration .columns-page-revers:after,
+.page-order .columns-page-revers:after {
+    clear: both
+}
+
+.content-main.registration .columns-page-revers > .column-page.left,
+.page-order .columns-page-revers > .column-page.left {
+    margin-right: 260px
+}
+
+.content-main.registration .columns-page-revers > .column-page.right,
+.page-order .columns-page-revers > .column-page.right {
+    width: 250px
+}
+
+.content-main.registration .column-trio-primary.left,
+.page-order .column-trio-primary.left {
+    width: 18.462em
+}
+
+.content-main.registration .column-trio-primary.right,
+.page-order .column-trio-primary.right {
+    margin-left: 20.385em
+}
+
+.content-main.registration .column-trio-primary .columns-trio-secondary .column-trio-secondary.left,
+.page-order .column-trio-primary .columns-trio-secondary .column-trio-secondary.left {
+    width: 32.692em
+}
+
+.content-main.registration .column-trio-primary .columns-trio-secondary .column-trio-secondary.right,
+.page-order .column-trio-primary .columns-trio-secondary .column-trio-secondary.right {
+    margin-left: 34.615em
+}
+
+.content-main.registration .fieldset,
+.content-main.registration .frame,
+.content-main.registration .new-items-list ul .page-order li > div,
+.content-main.registration .new-items-list ul li > div,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .page-order .new-item-list-group,
+.content-main.registration .page-order .fieldset,
+.page-order .content-main.registration .fieldset,
+.page-order .content-main.registration .new-items-list ul li > div,
+.page-order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group,
+.page-order .fieldset,
+.page-order .frame,
+.page-order .new-items-list ul .content-main.registration li > div,
+.page-order .new-items-list ul li > div,
+.page-order .new-items-list.new-items-list-line ul li > div .content-main.registration .new-item-list-group,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group {
+    border: 1px solid #d3d3d3;
+    border-radius: .38462em
+}
+
+.content-main.registration .fieldset .article,
+.content-main.registration .frame .article,
+.content-main.registration .new-items-list ul .page-order li > div .article,
+.content-main.registration .new-items-list ul li > div .article,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .article,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .page-order .new-item-list-group .article,
+.page-order .fieldset .article,
+.page-order .frame .article,
+.page-order .new-items-list ul .content-main.registration li > div .article,
+.page-order .new-items-list ul li > div .article,
+.page-order .new-items-list.new-items-list-line ul li > div .content-main.registration .new-item-list-group .article,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .article {
+    border-top: 1px solid #d3d3d3
+}
+
+.content-main.registration .fieldset .article:first-child,
+.content-main.registration .frame .article:first-child,
+.content-main.registration .new-items-list ul .page-order li > div .article:first-child,
+.content-main.registration .new-items-list ul li > div .article:first-child,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .page-order .new-item-list-group .article:first-child,
+.page-order .fieldset .article:first-child,
+.page-order .frame .article:first-child,
+.page-order .new-items-list ul .content-main.registration li > div .article:first-child,
+.page-order .new-items-list ul li > div .article:first-child,
+.page-order .new-items-list.new-items-list-line ul li > div .content-main.registration .new-item-list-group .article:first-child {
+    border-top: 0
+}
+
+.content-main.registration .fieldset,
+.page-order .fieldset {
+    position: relative
+}
+
+.content-main.registration .fieldset .legend,
+.page-order .fieldset .legend {
+    position: absolute;
+    background: #fff;
+    padding: 0 .76923em
+}
+
+.content-main.registration .fieldset .legend.left,
+.page-order .fieldset .legend.left {
+    left: .76923em
+}
+
+.content-main.registration .fieldset .legend.right,
+.page-order .fieldset .legend.right {
+    right: .76923em
+}
+
+.content-main.registration .fieldset .legend.small.top,
+.page-order .fieldset .legend.small.top {
+    top: -.42308em
+}
+
+.content-main.registration .fieldset .legend.small.top a,
+.page-order .fieldset .legend.small.top a {
+    font-size: .84615em
+}
+
+.content-main.registration .fieldset .legend.small.bottom,
+.page-order .fieldset .legend.small.bottom {
+    bottom: -.42308em
+}
+
+.content-main.registration .fieldset .legend.small.bottom a,
+.page-order .fieldset .legend.small.bottom a {
+    font-size: .84615em
+}
+
+.content-main.registration .fieldset .legend.medium.top,
+.page-order .fieldset .legend.medium.top {
+    top: -.61538em
+}
+
+.content-main.registration .fieldset .legend.medium.top a,
+.page-order .fieldset .legend.medium.top a {
+    font-size: 1.23077em
+}
+
+.content-main.registration .fieldset .legend.medium.bottom,
+.page-order .fieldset .legend.medium.bottom {
+    bottom: -.61538em
+}
+
+.content-main.registration .fieldset .legend.medium.bottom a,
+.page-order .fieldset .legend.medium.bottom a {
+    font-size: 1.23077em
+}
+
+.content-main.registration .fieldset .legend.large.top,
+.page-order .fieldset .legend.large.top {
+    top: -.80769em
+}
+
+.content-main.registration .fieldset .legend.large.top a,
+.page-order .fieldset .legend.large.top a {
+    font-size: 1.61538em
+}
+
+.content-main.registration .fieldset .legend.large.bottom,
+.page-order .fieldset .legend.large.bottom {
+    bottom: -.80769em
+}
+
+.content-main.registration .fieldset .legend.large.bottom a,
+.page-order .fieldset .legend.large.bottom a {
+    font-size: 1.61538em
+}
+
+.content-main.registration .fieldset .legend a,
+.page-order .fieldset .legend a {
+    display: block;
+    position: relative;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    padding: 0 !important
+}
+
+.content-main.registration .fieldset .legend a .icon,
+.page-order .fieldset .legend a .icon {
+    vertical-align: middle
+}
+
+.content-main.registration .fieldset.legend-small-position-top,
+.page-order .fieldset.legend-small-position-top {
+    padding-top: .42308em
+}
+
+.content-main.registration .fieldset.legend-small-position-bottom,
+.page-order .fieldset.legend-small-position-bottom {
+    padding-bottom: .42308em
+}
+
+.content-main.registration .fieldset.legend-medium-position-top,
+.page-order .fieldset.legend-medium-position-top {
+    padding-top: .61538em
+}
+
+.content-main.registration .fieldset.legend-medium-position-bottom,
+.page-order .fieldset.legend-medium-position-bottom {
+    padding-bottom: .61538em
+}
+
+.content-main.registration .fieldset.legend-large-position-top,
+.page-order .fieldset.legend-large-position-top {
+    padding-top: .80769em
+}
+
+.content-main.registration .fieldset.legend-large-position-bottom,
+.page-order .fieldset.legend-large-position-bottom {
+    padding-bottom: .80769em
+}
+
+.content-main.registration .product-comments-count a,
+.page-order .product-comments-count a {
+    display: block;
+    padding-right: 20px;
+    height: 18px !important;
+    background: url(/a0/ru/images/style/comment_ico.png) no-repeat 100% 0;
+    color: #ee000c;
+    vertical-align: bottom;
+    text-decoration: none;
+    font-size: .769em !important;
+    line-height: 24px !important
+}
+
+.content-main.registration .product-video-count a,
+.page-order .product-video-count a {
+    display: block;
+    padding-right: 20px;
+    height: 20px !important;
+    background: url(/a0/ru/images/style/video_ico.png) no-repeat 100% 0;
+    color: #ee000c;
+    vertical-align: bottom;
+    text-decoration: none;
+    font-size: .769em !important;
+    line-height: 26px !important
+}
+
+.content-main.registration .new-items-list .new-items-list-cart-bulk,
+.content-main.registration .new-items-list .new-items-list-thead,
+.content-main.registration .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-bulk,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-compare .new-item-list-compare-button label .new-item-list-compare-button-text,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-count,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-im .new-item-list-price-old-title,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-old .new-item-list-price-old-title,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-opt,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-info-large,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-promo ~ .new-item-list-rating,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-bulk,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button .new-item-list-compare-button-text .move-to-compare,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button label i.icon,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-selected .new-item-list-compare-button-text .add-compare,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-count,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-opt,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-info-small,
+.content-main.registration .new-items-list.new-items-list-table .new-item-list-btn .element-button .element-button-text,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-code .new-item-list-code-title,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-compare,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-discount,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im i,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old .new-item-list-price-old-title,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old i,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-opt,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-image .product-assets,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-info-large,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-option,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-promo,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-rating,
+.content-main.registration .page-order .new-items-list .new-items-list-cart-bulk,
+.content-main.registration .page-order .new-items-list .new-items-list-thead,
+.content-main.registration .page-order .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon,
+.content-main.registration .page-order .new-items-list.new-items-list-box ul li div .new-item-list-bulk,
+.content-main.registration .page-order .new-items-list.new-items-list-box ul li div .new-item-list-compare .new-item-list-compare-button label .new-item-list-compare-button-text,
+.content-main.registration .page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-count,
+.content-main.registration .page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-im .new-item-list-price-old-title,
+.content-main.registration .page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-old .new-item-list-price-old-title,
+.content-main.registration .page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-opt,
+.content-main.registration .page-order .new-items-list.new-items-list-box ul li div .new-item-list-info-large,
+.content-main.registration .page-order .new-items-list.new-items-list-box ul li div .new-item-list-promo ~ .new-item-list-rating,
+.content-main.registration .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-bulk,
+.content-main.registration .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button .new-item-list-compare-button-text .move-to-compare,
+.content-main.registration .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button label i.icon,
+.content-main.registration .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-selected .new-item-list-compare-button-text .add-compare,
+.content-main.registration .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-count,
+.content-main.registration .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-opt,
+.content-main.registration .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-info-small,
+.content-main.registration .page-order .new-items-list.new-items-list-table .new-item-list-btn .element-button .element-button-text,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-code .new-item-list-code-title,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-compare,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-discount,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im i,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old .new-item-list-price-old-title,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old i,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-opt,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-image .product-assets,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-info-large,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-option,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-promo,
+.content-main.registration .page-order .new-items-list.new-items-list-table ul li > div .new-item-list-rating,
+.page-order .content-main.registration .new-items-list .new-items-list-cart-bulk,
+.page-order .content-main.registration .new-items-list .new-items-list-thead,
+.page-order .content-main.registration .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon,
+.page-order .content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-bulk,
+.page-order .content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-compare .new-item-list-compare-button label .new-item-list-compare-button-text,
+.page-order .content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-count,
+.page-order .content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-im .new-item-list-price-old-title,
+.page-order .content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-old .new-item-list-price-old-title,
+.page-order .content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-opt,
+.page-order .content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-info-large,
+.page-order .content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-promo ~ .new-item-list-rating,
+.page-order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-bulk,
+.page-order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button .new-item-list-compare-button-text .move-to-compare,
+.page-order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button label i.icon,
+.page-order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-selected .new-item-list-compare-button-text .add-compare,
+.page-order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-count,
+.page-order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-opt,
+.page-order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-info-small,
+.page-order .content-main.registration .new-items-list.new-items-list-table .new-item-list-btn .element-button .element-button-text,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-code .new-item-list-code-title,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-compare,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-discount,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im i,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old .new-item-list-price-old-title,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old i,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-opt,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-image .product-assets,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-info-large,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-option,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-promo,
+.page-order .content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-rating,
+.page-order .new-items-list .new-items-list-cart-bulk,
+.page-order .new-items-list .new-items-list-thead,
+.page-order .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-bulk,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-compare .new-item-list-compare-button label .new-item-list-compare-button-text,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-count,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-im .new-item-list-price-old-title,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-old .new-item-list-price-old-title,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-opt,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-info-large,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-promo ~ .new-item-list-rating,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-bulk,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button .new-item-list-compare-button-text .move-to-compare,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button label i.icon,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-selected .new-item-list-compare-button-text .add-compare,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-count,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-opt,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-info-small,
+.page-order .new-items-list.new-items-list-table .new-item-list-btn .element-button .element-button-text,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-code .new-item-list-code-title,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-compare,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-discount,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im i,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old .new-item-list-price-old-title,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old i,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-opt,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-image .product-assets,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-info-large,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-option,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-promo,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-rating {
+    display: none
+}
+
+.content-main.registration .new-items-list ins,
+.page-order .new-items-list ins {
+    font-size: 1.23077em;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none
+}
+
+.content-main.registration .new-items-list ul li,
+.page-order .new-items-list ul li {
+    background-color: #fff;
+    text-align: left;
+    margin-bottom: 10px
+}
+
+.content-main.registration .new-items-list ul li > div,
+.page-order .new-items-list ul li > div {
+    padding-left: .76923em;
+    padding-right: .76923em;
+    -webkit-transition: -webkit-box-shadow 1s ease;
+    transition: -webkit-box-shadow 1s ease;
+    transition: box-shadow 1s ease;
+    transition: box-shadow 1s ease, -webkit-box-shadow 1s ease;
+    position: relative
+}
+
+.content-main.registration .new-items-list ul li > div:hover,
+.page-order .new-items-list ul li > div:hover {
+    border: 1px solid #a2a2a2;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .5)
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-code,
+.page-order .new-items-list ul li > div .new-item-list-code {
+    height: .84615em
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-code span,
+.page-order .new-items-list ul li > div .new-item-list-code span {
+    line-height: 1
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-image,
+.page-order .new-items-list ul li > div .new-item-list-image {
+    height: 10em;
+    line-height: 10em;
+    text-align: center
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-image label,
+.page-order .new-items-list ul li > div .new-item-list-image label {
+    cursor: pointer
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-discount,
+.page-order .new-items-list ul li > div .new-item-list-discount {
+    position: absolute;
+    padding: .38462em 1.23077em;
+    background-color: #99c255;
+    background-color: rgba(153, 194, 85, .9);
+    left: -1px;
+    height: 30px;
+    max-width: 175px
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-discount:after,
+.page-order .new-items-list ul li > div .new-item-list-discount:after {
+    content: "";
+    position: absolute;
+    border-color: transparent;
+    border-color: rgba(153, 194, 85, .9) transparent rgba(153, 194, 85, .9);
+    border-width: 20px 10px 20px 0;
+    border-style: solid;
+    left: 100%;
+    top: 0;
+    bottom: 0
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-discount p,
+.page-order .new-items-list ul li > div .new-item-list-discount p {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 11px
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare,
+.page-order .new-items-list ul li > div .new-item-list-compare {
+    z-index: 1
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare label,
+.page-order .new-items-list ul li > div .new-item-list-compare label {
+    cursor: pointer
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare.new-item-list-compare-selected label,
+.page-order .new-items-list ul li > div .new-item-list-compare.new-item-list-compare-selected label {
+    color: #5c8c00 !important
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare.new-item-list-compare-selected label i.icon,
+.page-order .new-items-list ul li > div .new-item-list-compare.new-item-list-compare-selected label i.icon {
+    background-position: 0 0 !important
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare.new-item-list-compare-balloon-open .new-item-list-compare-balloon,
+.page-order .new-items-list ul li > div .new-item-list-compare.new-item-list-compare-balloon-open .new-item-list-compare-balloon {
+    display: block
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon,
+.page-order .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon {
+    position: absolute;
+    z-index: 99999;
+    padding: 0 0 .53846em;
+    border: 1px solid #e7e7e7;
+    top: 100%;
+    width: 150px;
+    right: -.76923em;
+    background: #fff;
+    margin-top: .38462em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    border-radius: .38462em
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon span,
+.page-order .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon span {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    line-height: 1
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon span a,
+.page-order .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon span a {
+    text-decoration: none
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon span:first-child a,
+.page-order .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon span:first-child a {
+    color: #5c8c00
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon span:first-child + span a,
+.page-order .new-items-list ul li > div .new-item-list-compare .new-item-list-compare-balloon span:first-child + span a {
+    color: red
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-rating,
+.page-order .new-items-list ul li > div .new-item-list-rating {
+    height: .84615em;
+    line-height: .84615em;
+    width: 6.15385em
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-rating .rating-box,
+.page-order .new-items-list ul li > div .new-item-list-rating .rating-box {
+    margin-left: -.38462em;
+    vertical-align: top
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-btn,
+.page-order .new-items-list ul li > div .new-item-list-btn {
+    width: 7.23077em;
+    height: 2.69231em;
+    text-align: right
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-btn .new-item-list-avail,
+.page-order .new-items-list ul li > div .new-item-list-btn .new-item-list-avail {
+    text-decoration: none
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-btn .new-item-list-avail.new-item-list-avail-in-stock,
+.page-order .new-items-list ul li > div .new-item-list-btn .new-item-list-avail.new-item-list-avail-in-stock {
+    color: #5ea033
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note,
+.page-order .new-items-list ul li > div .new-item-list-avail-note {
+    position: absolute;
+    padding: 1.53846em;
+    padding-bottom: 0;
+    border: 1px solid #dadada;
+    border-radius: .38462em;
+    -webkit-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+    background: #fff;
+    z-index: 10;
+    margin: 10px;
+    text-align: left
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .head-3,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .head-3 {
+    font-size: .92308em
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .new-item-list-avail-note-arrow,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .new-item-list-avail-note-arrow {
+    background: url(/static/images/arrow-block-up.png) no-repeat;
+    width: 9px;
+    height: 6px;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin-left: -4px
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries-wrap,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries-wrap {
+    width: 43.07692em;
+    padding-bottom: 1.53846em
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries {
+    width: 100%;
+    border-bottom: 1px solid #ededed
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries.deliveries-not-bordered,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries.deliveries-not-bordered {
+    border: 0
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-title,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-title {
+    width: 46%;
+    vertical-align: top
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-delay,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-delay {
+    width: 26%
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-price,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-price {
+    width: 10%;
+    text-align: center
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-buy,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-buy {
+    width: 20%;
+    padding-right: 0;
+    text-align: right
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-buy a,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries .delivery-buy a {
+    text-decoration: none;
+    vertical-align: middle
+}
+
+.content-main.registration .new-items-list ul li > div .new-item-list-avail-note .deliveries td,
+.page-order .new-items-list ul li > div .new-item-list-avail-note .deliveries td {
+    padding: .46154em 0;
+    padding-right: .46154em;
+    border-top: 1px solid #ededed;
+    vertical-align: middle
+}
+
+.content-main.registration .new-items-list.new-items-list-count-three ul,
+.page-order .new-items-list.new-items-list-count-three ul {
+    margin-right: -.76923em
+}
+
+.content-main.registration .new-items-list.new-items-list-count-three ul li,
+.page-order .new-items-list.new-items-list-count-three ul li {
+    margin-right: .76923em
+}
+
+.content-main.registration .new-items-list.new-items-list-count-four ul,
+.page-order .new-items-list.new-items-list-count-four ul {
+    margin-right: -.92308em
+}
+
+.content-main.registration .new-items-list.new-items-list-count-four ul li,
+.page-order .new-items-list.new-items-list-count-four ul li {
+    margin-right: .92308em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li,
+.page-order .new-items-list.new-items-list-line ul li {
+    display: block
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div,
+.page-order .new-items-list.new-items-list-line ul li > div {
+    padding-bottom: .76923em;
+    min-height: 16em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-code,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-code {
+    position: absolute;
+    right: .76923em;
+    padding-top: .61538em;
+    width: 8.84615em;
+    text-align: center
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-image,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-image {
+    position: absolute;
+    left: .76923em;
+    top: 2.30769em;
+    width: 13.84615em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-image .product-assets,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-image .product-assets {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    line-height: 1
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-discount,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-discount {
+    top: 2.30769em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-discount img,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-discount img {
+    position: absolute;
+    top: 0;
+    left: 10px
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare {
+    position: absolute;
+    left: .76923em;
+    top: 12.30769em;
+    height: 1em;
+    line-height: 1em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-selected .new-item-list-compare-button-text .move-to-compare,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-selected .new-item-list-compare-button-text .move-to-compare {
+    display: block
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-balloon-open ~ .new-item-list-rating,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-balloon-open ~ .new-item-list-rating {
+    top: 15.07692em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-balloon-open ~ .new-item-list-rating .icon + .icon,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-balloon-open ~ .new-item-list-rating .icon + .icon {
+    margin-left: .23077em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-balloon-open .new-item-list-compare-balloon,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare.new-item-list-compare-balloon-open .new-item-list-compare-balloon {
+    display: block
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button {
+    vertical-align: top
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button input,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button input {
+    margin: 0;
+    margin-right: .45455em;
+    vertical-align: top
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button label,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-button label {
+    display: inline-block;
+    line-height: 1em;
+    color: #646464;
+    vertical-align: top
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-balloon,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-balloon {
+    margin-top: .38462em;
+    border: 0;
+    position: static;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: auto !important
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-balloon span,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-balloon span {
+    display: inline
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-balloon span:first-child a,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-balloon span:first-child a {
+    color: #5c8c00
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-balloon span:first-child + span a,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-compare .new-item-list-compare-balloon span:first-child + span a {
+    color: red
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-promo,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-promo {
+    position: absolute;
+    left: .76923em;
+    top: .38462em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-promo ~ .new-item-list-name,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-promo ~ .new-item-list-name {
+    left: 7.30769em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-promo.new-item-list-promo-recommendation ~ .new-item-list-name,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-promo.new-item-list-promo-recommendation ~ .new-item-list-name {
+    left: 120px
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-rating,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-rating {
+    position: absolute;
+    left: .76923em;
+    top: 13.69231em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-rating .icon + .icon,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-rating .icon + .icon {
+    margin-left: .23077em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-name,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-name {
+    padding-top: .46154em;
+    padding-bottom: .07692em;
+    position: absolute;
+    left: .76923em;
+    right: 10.38462em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    top: 0;
+    line-height: 1
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-info-large,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-option,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-info-large,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-option {
+    margin-left: 15.38462em;
+    margin-right: 10.38462em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-info-large,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-info-large {
+    margin-top: 2.30769em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-info-large table,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-info-large table {
+    width: 100%
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-info-large table tr:first-child td,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-info-large table tr:first-child td {
+    border-top: 1px solid #e7e7e7;
+    width: 65%
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-info-large table tr td,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-info-large table tr td {
+    padding-top: .76923em;
+    padding-bottom: .76923em;
+    border-bottom: 1px solid #e7e7e7
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-option,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-option {
+    margin-top: .38462em;
+    overflow: hidden
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-option p:first-child,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-option p:first-child {
+    float: left
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-option p:first-child + p,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-option p:first-child + p {
+    float: right;
+    margin-right: 1.53846em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group {
+    padding: .76923em;
+    position: absolute;
+    right: .76923em;
+    top: 2.30769em;
+    width: 7.69231em;
+    text-align: center
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-old,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-old {
+    margin-bottom: 1.53846em;
+    color: #646464
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-old del,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-old ins,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-old del,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-old ins {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-im,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group .new-item-list-price-im {
+    margin-bottom: .76923em
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-btn,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-btn {
+    height: auto
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-btn .element-button,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-btn .element-button {
+    display: block
+}
+
+.content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-btn .new-item-list-avail,
+.page-order .new-items-list.new-items-list-line ul li > div .new-item-list-btn .new-item-list-avail {
+    margin-bottom: .76923em;
+    display: block;
+    text-align: center
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li,
+.page-order .new-items-list.new-items-list-box ul li {
+    width: 16.94872em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li > div,
+.page-order .new-items-list.new-items-list-box ul li > div {
+    padding-bottom: .76923em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-code,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-code {
+    padding-left: .76923em;
+    padding-right: .76923em;
+    padding-top: .61538em;
+    padding-bottom: .61538em;
+    margin: 0 -10px;
+    border-radius: 5px 5px 0 0;
+    background-color: #f0f0f0
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-image,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-image {
+    margin-top: 2.53846em;
+    margin-bottom: .38462em;
+    position: relative
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-image .product-assets,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-image .product-assets {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    line-height: 1
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-discount,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-discount {
+    top: 4.61538em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-compare,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-compare {
+    position: absolute;
+    right: .76923em;
+    top: .46154em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-compare i.icon,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-compare i.icon {
+    vertical-align: top
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-compare .new-item-list-compare-button input,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-compare .new-item-list-compare-button input {
+    position: absolute;
+    left: -999999px
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-promo,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-promo {
+    position: absolute;
+    width: 4.30769em;
+    top: 2px;
+    left: 55%;
+    margin-left: -2.15385em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-promo.new-item-list-promo-recommendation,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-promo.new-item-list-promo-recommendation {
+    margin-left: -40px
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-rating,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-rating {
+    position: absolute;
+    top: .61538em;
+    left: 60%;
+    margin-left: -3.07692em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-rating .icon + .icon,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-rating .icon + .icon {
+    margin-left: .23077em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-name,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-name {
+    position: absolute;
+    top: 2.46154em;
+    left: .76923em;
+    right: .76923em;
+    height: 2.15385em;
+    overflow: hidden;
+    line-height: 1
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-name a,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-name b,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-name a,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-name b {
+    line-height: 1
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-info-small,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-info-small {
+    color: #646464;
+    line-height: 1;
+    height: 2em;
+    overflow: hidden;
+    margin-bottom: .38462em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-info-small a,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-info-small a {
+    color: #646464
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-info-small p,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-info-small p {
+    line-height: 13px
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-option,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-option {
+    margin-bottom: .38462em;
+    height: 40px
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group {
+    position: relative;
+    height: 2.69231em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-im,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-old,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-im,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-old {
+    margin-right: 7.30769em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-im span,
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-old span,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-im span,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-price-old span {
+    color: #777;
+    font-size: 1.273em;
+    font-weight: 700;
+    text-decoration: line-through
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-btn,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -1.34615em
+}
+
+.content-main.registration .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-btn .new-item-list-avail,
+.page-order .new-items-list.new-items-list-box ul li div .new-item-list-group .new-item-list-btn .new-item-list-avail {
+    position: absolute;
+    top: -19px;
+    right: 0
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead {
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 1px solid #d3d3d3
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-cart-bulk,
+.page-order .new-items-list.new-items-list-table .new-items-list-cart-bulk {
+    display: block
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-bulk,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-code,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-count,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-image,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-info-small,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-name,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-price-im,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-price-opt,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-bulk,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-code,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-count,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-image,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-info-small,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-name,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-price-im,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-price-opt {
+    display: inline-block;
+    color: #646464
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-image,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-info-small,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-name,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-image,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-info-small,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-name {
+    padding-left: 10px
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-count,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-price-im,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-price-opt,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-count,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-price-im,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-price-opt {
+    padding-left: 5px
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-bulk,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-bulk {
+    width: 20px
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-bulk input,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-bulk input {
+    margin-left: 0
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-code,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-code {
+    width: 60px
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-image,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-image {
+    width: 65px
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-name,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-name {
+    width: 115px;
+    padding-left: 0
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-info-small,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-info-small {
+    width: 120px
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-price-im,
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-price-opt,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-price-im,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-price-opt {
+    width: 70px
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-items-list-thead-count,
+.page-order .new-items-list.new-items-list-table .new-items-list-thead-count {
+    width: 63px
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-item-list-btn .element-button,
+.page-order .new-items-list.new-items-list-table .new-item-list-btn .element-button {
+    display: block;
+    min-width: auto;
+    height: 33px;
+    position: relative
+}
+
+.content-main.registration .new-items-list.new-items-list-table .new-item-list-btn .element-button:after,
+.page-order .new-items-list.new-items-list-table .new-item-list-btn .element-button:after {
+    content: '';
+    background: url(/static/images/icon/icon/cart-sm-black.svg) no-repeat 50% 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li,
+.page-order .new-items-list.new-items-list-table ul li {
+    margin-bottom: 0
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div,
+.page-order .new-items-list.new-items-list-table ul li > div {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    padding: .76923em 0;
+    border-radius: 0
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div:hover,
+.page-order .new-items-list.new-items-list-table ul li > div:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-btn,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-bulk,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-code,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-count,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-image,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-info-small,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-name,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-price-im,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-price-opt,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-btn,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-bulk,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-code,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-count,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-image,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-info-small,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-name,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-price-im,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-price-opt {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-bulk,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-bulk {
+    width: 20px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-bulk input,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-bulk input {
+    margin-left: 0
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-btn,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-image,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-btn,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-image {
+    margin-left: 10px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-count,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-price-im,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-price-old,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-count,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-price-im,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-price-old {
+    padding-left: 5px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-code,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-code {
+    width: 60px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-image,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-image {
+    width: 65px;
+    height: 61px;
+    position: relative;
+    text-align: center;
+    margin: 0 5px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-name,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-name {
+    width: 115px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-name .product-assets,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-name .product-assets {
+    display: none
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-name a,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-name a {
+    vertical-align: middle
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-info-small,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-info-small {
+    width: 120px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old del,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old ins,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old del,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old ins {
+    font-size: 11px !important;
+    color: #000;
+    font-weight: 400
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old {
+    width: 70px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im del,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im ins,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old del,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old ins,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im del,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im ins,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old del,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-old ins {
+    font-size: 11px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im del,
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im ins,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im del,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-price-im ins {
+    text-decoration: none
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-count,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-count {
+    width: 73px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-btn,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-btn {
+    text-align: right;
+    width: 38px
+}
+
+.content-main.registration .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-btn .new-item-list-avail,
+.page-order .new-items-list.new-items-list-table ul li > div .new-item-list-group .new-item-list-btn .new-item-list-avail {
+    display: none
+}
+
+.content-main.registration .ui-datepicker,
+.page-order .ui-datepicker {
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 7px #c5c5c5;
+    box-shadow: 0 0 7px #c5c5c5
+}
+
+.content-main.registration .ui-datepicker-header,
+.page-order .ui-datepicker-header {
+    position: relative;
+    height: 31px;
+    border-bottom: 1px solid #c2c2c2;
+    border-radius: 3px 3px 0 0;
+    background: url(/a0/ru/images/style/datepicker/background.png) repeat-x
+}
+
+.content-main.registration .ui-datepicker-header a,
+.page-order .ui-datepicker-header a {
+    position: absolute;
+    top: 50%;
+    display: block;
+    margin-top: -8.5px;
+    width: 17px;
+    height: 17px;
+    background-image: url(/a0/ru/images/style/datepicker/buttons.png);
+    background-repeat: no-repeat;
+    cursor: pointer
+}
+
+.content-main.registration .ui-datepicker-header a.ui-state-disabled,
+.page-order .ui-datepicker-header a.ui-state-disabled {
+    cursor: default
+}
+
+.content-main.registration .ui-datepicker-header .ui-datepicker-prev,
+.page-order .ui-datepicker-header .ui-datepicker-prev {
+    left: 5px;
+    background-position: 0 -17px
+}
+
+.content-main.registration .ui-datepicker-header .ui-datepicker-prev.ui-state-disabled,
+.page-order .ui-datepicker-header .ui-datepicker-prev.ui-state-disabled {
+    background-position: 0 0
+}
+
+.content-main.registration .ui-datepicker-header .ui-datepicker-next,
+.page-order .ui-datepicker-header .ui-datepicker-next {
+    right: 5px;
+    background-position: -17px -17px
+}
+
+.content-main.registration .ui-datepicker-header .ui-datepicker-next.ui-state-disabled,
+.page-order .ui-datepicker-header .ui-datepicker-next.ui-state-disabled {
+    background-position: -17px 0
+}
+
+.content-main.registration .ui-datepicker-header .ui-datepicker-title,
+.page-order .ui-datepicker-header .ui-datepicker-title {
+    color: #646464;
+    text-align: center;
+    font-size: 11px;
+    line-height: 31px
+}
+
+.content-main.registration .ui-datepicker-header .ui-datepicker-title .ui-datepicker-month,
+.page-order .ui-datepicker-header .ui-datepicker-title .ui-datepicker-month {
+    text-transform: uppercase
+}
+
+.content-main.registration .ui-datepicker-calendar td,
+.content-main.registration .ui-datepicker-calendar th,
+.page-order .ui-datepicker-calendar td,
+.page-order .ui-datepicker-calendar th {
+    padding: 5px 5px 5px 0
+}
+
+.content-main.registration .ui-datepicker-calendar td:first-child,
+.content-main.registration .ui-datepicker-calendar th:first-child,
+.page-order .ui-datepicker-calendar td:first-child,
+.page-order .ui-datepicker-calendar th:first-child {
+    padding-left: 5px
+}
+
+.content-main.registration .ui-datepicker-calendar td a,
+.content-main.registration .ui-datepicker-calendar td span,
+.content-main.registration .ui-datepicker-calendar th a,
+.content-main.registration .ui-datepicker-calendar th span,
+.page-order .ui-datepicker-calendar td a,
+.page-order .ui-datepicker-calendar td span,
+.page-order .ui-datepicker-calendar th a,
+.page-order .ui-datepicker-calendar th span {
+    display: block;
+    width: 26px;
+    height: 26px;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 26px
+}
+
+.content-main.registration .ui-datepicker-calendar th span,
+.page-order .ui-datepicker-calendar th span {
+    height: 18px;
+    color: #646464;
+    text-transform: uppercase;
+    line-height: 18px
+}
+
+.content-main.registration .ui-datepicker-calendar thead,
+.page-order .ui-datepicker-calendar thead {
+    border-bottom: 1px solid #d5d5d5;
+    background: #e3e3e3
+}
+
+.content-main.registration .ui-datepicker-calendar tbody a,
+.content-main.registration .ui-datepicker-calendar tbody span,
+.page-order .ui-datepicker-calendar tbody a,
+.page-order .ui-datepicker-calendar tbody span {
+    background-image: url(/a0/ru/images/style/datepicker/circles.png);
+    background-repeat: no-repeat
+}
+
+.content-main.registration .ui-datepicker-calendar .ui-state-disabled .ui-state-default,
+.page-order .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
+    color: #b4b4b4
+}
+
+.content-main.registration .ui-datepicker-calendar .ui-datepicker-today .ui-state-default,
+.page-order .ui-datepicker-calendar .ui-datepicker-today .ui-state-default {
+    background-position: -26px 0
+}
+
+.content-main.registration .ui-datepicker-calendar .ui-state-default,
+.page-order .ui-datepicker-calendar .ui-state-default {
+    background-position: 0 0
+}
+
+.content-main.registration .ui-datepicker-calendar .ui-state-default.ui-state-active,
+.content-main.registration .ui-datepicker-calendar .ui-state-default.ui-state-hover,
+.page-order .ui-datepicker-calendar .ui-state-default.ui-state-active,
+.page-order .ui-datepicker-calendar .ui-state-default.ui-state-hover {
+    background-position: -52px 0;
+    color: #fff
+}
+
+.content-main.registration .ui-datepicker-trigger,
+.page-order .ui-datepicker-trigger {
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.content-main.registration .ui-icon,
+.page-order .ui-icon {
+    display: inline-block
+}
+
+.content-main.registration .new-items-list-count-four a,
+.content-main.registration .new-items-list-count-four p,
+.content-main.registration .new-items-list-count-four span,
+.page-order .new-items-list-count-four a,
+.page-order .new-items-list-count-four p,
+.page-order .new-items-list-count-four span {
+    font-size: 1em
+}
+
+.content-main.registration .new-items-list-count-four .promo-label,
+.page-order .new-items-list-count-four .promo-label {
+    border-radius: 3px;
+    background: #81b014;
+    padding: 3px 10px 4px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.5 !important
+}
+
+.content-main.order .section-checkout .social-registred-list li,
+.content-main.postcheckout .section-checkout .social-registred-list li {
+    display: inline-block
+}
+
+.content-main.order .section-checkout .legend,
+.content-main.postcheckout .section-checkout .legend {
+    line-height: .6;
+    font-size: 1em;
+    left: 10px !important;
+    font-weight: 700
+}
+
+.content-main.order .section-checkout .fieldset,
+.content-main.postcheckout .section-checkout .fieldset {
+    padding: 20px !important
+}
+
+.content-main.order .section-checkout .fixed-box,
+.content-main.postcheckout .section-checkout .fixed-box {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.content-main.order .section-checkout .required,
+.content-main.postcheckout .section-checkout .required {
+    color: #ff764c
+}
+
+.content-main.order .section-checkout .required.required-static,
+.content-main.postcheckout .section-checkout .required.required-static {
+    position: absolute
+}
+
+.content-main.order .section-checkout .required-error,
+.content-main.postcheckout .section-checkout .required-error {
+    border-color: #ff764c !important
+}
+
+.content-main.order .section-checkout .required-error img,
+.content-main.postcheckout .section-checkout .required-error img {
+    border-color: #ff764c
+}
+
+.content-main.order .section-checkout .input.required-valid ~ .required-valid-message,
+.content-main.postcheckout .section-checkout .input.required-valid ~ .required-valid-message {
+    display: block
+}
+
+.content-main.order .section-checkout .required-valid-message,
+.content-main.postcheckout .section-checkout .required-valid-message {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -5px;
+    margin-left: 5px;
+    width: 12px;
+    height: 10px;
+    background: url(/static/images/icon/valid.png)
+}
+
+.content-main.order .section-checkout .required-error-message,
+.content-main.postcheckout .section-checkout .required-error-message {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #ff764c;
+    border-radius: 3px;
+    white-space: nowrap;
+    border: 1px solid #ff764c;
+    display: none
+}
+
+.content-main.order .section-checkout .required-error-message.required-error-message-active,
+.content-main.postcheckout .section-checkout .required-error-message.required-error-message-active {
+    display: block
+}
+
+.content-main.order .section-checkout .required-error-message:after,
+.content-main.postcheckout .section-checkout .required-error-message:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-color: transparent #ff764c transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 4px 4px 4px 4px
+}
+
+.content-main.order .section-checkout form#order-form p,
+.content-main.postcheckout .section-checkout form#order-form p {
+    line-height: 15px;
+    margin-top: 10px;
+    position: relative
+}
+
+.content-main.order .section-checkout form#order-form p:first-child,
+.content-main.postcheckout .section-checkout form#order-form p:first-child {
+    margin-top: 0
+}
+
+.content-main.order .section-checkout form#order-form .change_captcha,
+.content-main.postcheckout .section-checkout form#order-form .change_captcha {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url(/static/images/refresh.png) no-repeat 50% 50%
+}
+
+.content-main.order .section-checkout form#order-form .input,
+.content-main.order .section-checkout form#order-form .label,
+.content-main.postcheckout .section-checkout form#order-form .input,
+.content-main.postcheckout .section-checkout form#order-form .label {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.content-main.order .section-checkout form#order-form .label,
+.content-main.postcheckout .section-checkout form#order-form .label {
+    width: 25%
+}
+
+.content-main.order .section-checkout form#order-form .input,
+.content-main.postcheckout .section-checkout form#order-form .input {
+    width: 75%
+}
+
+.content-main.order .section-checkout form#order-form img,
+.content-main.order .section-checkout form#order-form input,
+.content-main.postcheckout .section-checkout form#order-form img,
+.content-main.postcheckout .section-checkout form#order-form input {
+    vertical-align: top
+}
+
+.content-main.order .section-checkout form#order-form textarea,
+.content-main.postcheckout .section-checkout form#order-form textarea {
+    vertical-align: middle
+}
+
+.content-main.order .section-checkout form#order-form .label,
+.content-main.postcheckout .section-checkout form#order-form .label {
+    padding-right: 2.906%
+}
+
+.content-main.order .section-checkout form#order-form label,
+.content-main.postcheckout .section-checkout form#order-form label {
+    font-weight: 700
+}
+
+.content-main.order .section-checkout form#order-form input[type=password],
+.content-main.order .section-checkout form#order-form input[type=text],
+.content-main.postcheckout .section-checkout form#order-form input[type=password],
+.content-main.postcheckout .section-checkout form#order-form input[type=text] {
+    line-height: 16px
+}
+
+.content-main.order .section-checkout form#order-form input[type=password],
+.content-main.order .section-checkout form#order-form input[type=text],
+.content-main.order .section-checkout form#order-form textarea,
+.content-main.postcheckout .section-checkout form#order-form input[type=password],
+.content-main.postcheckout .section-checkout form#order-form input[type=text],
+.content-main.postcheckout .section-checkout form#order-form textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    border-radius: 3px;
+    padding: 12px
+}
+
+.content-main.order .section-checkout form#order-form input[type=checkbox],
+.content-main.postcheckout .section-checkout form#order-form input[type=checkbox] {
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.content-main.order .section-checkout form#order-form select,
+.content-main.postcheckout .section-checkout form#order-form select {
+    width: 271px
+}
+
+.content-main.order .section-checkout form#order-form #keycode,
+.content-main.postcheckout .section-checkout form#order-form #keycode {
+    width: 131px;
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
+    line-height: 12px;
+    height: 12px
+}
+
+.content-main.order .section-checkout form#order-form .juridical-user-data,
+.content-main.postcheckout .section-checkout form#order-form .juridical-user-data {
+    display: none
+}
+
+.content-main.order .section-checkout form#order-form .juridical-user-data.juridical-user-data-active,
+.content-main.postcheckout .section-checkout form#order-form .juridical-user-data.juridical-user-data-active {
+    display: block
+}
+
+.content-main.order .section-checkout .select2-city,
+.content-main.order .section-checkout .select2-phone,
+.content-main.postcheckout .section-checkout .select2-city,
+.content-main.postcheckout .section-checkout .select2-phone {
+    position: relative
+}
+
+.content-main.order .section-checkout .offset-quater-of-parent.clearfix .half-of-parent:first-child,
+.content-main.postcheckout .section-checkout .offset-quater-of-parent.clearfix .half-of-parent:first-child {
+    margin-left: -.5px
+}
+
+.content-main.order .section-checkout .half-of-parent .label,
+.content-main.postcheckout .section-checkout .half-of-parent .label {
+    width: 45%
+}
+
+.content-main.order .section-checkout .half-of-parent .input,
+.content-main.postcheckout .section-checkout .half-of-parent .input {
+    width: 55%;
+    text-align: right
+}
+
+.content-main.order .section-checkout .half-of-parent .input input,
+.content-main.postcheckout .section-checkout .half-of-parent .input input {
+    text-align: left
+}
+
+.content-main.order .section-checkout .select2-phone.input select + .select2 .select2-selection.select2-selection--single,
+.content-main.postcheckout .section-checkout .select2-phone.input select + .select2 .select2-selection.select2-selection--single {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.content-main.order .section-checkout .select2-phone.input select ~ input,
+.content-main.postcheckout .section-checkout .select2-phone.input select ~ input {
+    border-radius: 0 3px 3px 0 !important
+}
+
+.content-main.order .section-checkout .input,
+.content-main.order .section-checkout .label,
+.content-main.postcheckout .section-checkout .input,
+.content-main.postcheckout .section-checkout .label {
+    display: inline-block
+}
+
+.content-main.order .section-checkout .label,
+.content-main.postcheckout .section-checkout .label {
+    font-size: 1em
+}
+
+.content-main.order .section-checkout .label.box-inline-top,
+.content-main.postcheckout .section-checkout .label.box-inline-top {
+    vertical-align: top
+}
+
+.content-main.order .section-checkout .label input[type=password],
+.content-main.order .section-checkout .label input[type=text],
+.content-main.postcheckout .section-checkout .label input[type=password],
+.content-main.postcheckout .section-checkout .label input[type=text] {
+    line-height: 16px
+}
+
+.content-main.order .section-checkout .label input[type=password],
+.content-main.order .section-checkout .label input[type=text],
+.content-main.order .section-checkout .label textarea,
+.content-main.postcheckout .section-checkout .label input[type=password],
+.content-main.postcheckout .section-checkout .label input[type=text],
+.content-main.postcheckout .section-checkout .label textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    border-radius: 3px;
+    padding: 12px
+}
+
+.content-main.order .section-checkout .label input[type=checkbox],
+.content-main.postcheckout .section-checkout .label input[type=checkbox] {
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.content-main.order .section-checkout .label select,
+.content-main.postcheckout .section-checkout .label select {
+    width: 271px
+}
+
+.content-main.order .section-checkout .label #keycode,
+.content-main.postcheckout .section-checkout .label #keycode {
+    width: 131px;
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
+    line-height: 12px;
+    height: 12px
+}
+
+.content-main.order .section-checkout .label select + .select2-container--open .select2-selection.select2-selection--single,
+.content-main.postcheckout .section-checkout .label select + .select2-container--open .select2-selection.select2-selection--single {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important
+}
+
+.content-main.order .section-checkout .label select + .select2 .select2-selection.select2-selection--single .select2-selection__rendered,
+.content-main.postcheckout .section-checkout .label select + .select2 .select2-selection.select2-selection--single .select2-selection__rendered {
+    line-height: 39px
+}
+
+.content-main.order .section-checkout .label select + .select2 .select2-selection.select2-selection--single .select2-selection__arrow,
+.content-main.postcheckout .section-checkout .label select + .select2 .select2-selection.select2-selection--single .select2-selection__arrow {
+    height: 39px
+}
+
+.content-main.order .section-checkout .label input[type=password],
+.content-main.order .section-checkout .label input[type=text],
+.content-main.order .section-checkout .label textarea,
+.content-main.postcheckout .section-checkout .label input[type=password],
+.content-main.postcheckout .section-checkout .label input[type=text],
+.content-main.postcheckout .section-checkout .label textarea {
+    font-size: 1em
+}
+
+.content-main.order .section-checkout .label .juridical-user-data,
+.content-main.postcheckout .section-checkout .label .juridical-user-data {
+    display: none
+}
+
+.content-main.order .section-checkout .label .juridical-user-data.juridical-user-data-active,
+.content-main.postcheckout .section-checkout .label .juridical-user-data.juridical-user-data-active {
+    display: block
+}
+
+.content-main.order .section-checkout .select2-city,
+.content-main.order .section-checkout .select2-phone,
+.content-main.postcheckout .section-checkout .select2-city,
+.content-main.postcheckout .section-checkout .select2-phone {
+    position: relative
+}
+
+.content-main.order .section-checkout .half-of-parent .label,
+.content-main.postcheckout .section-checkout .half-of-parent .label {
+    width: 45%
+}
+
+.content-main.order .section-checkout .half-of-parent .input,
+.content-main.postcheckout .section-checkout .half-of-parent .input {
+    width: 55%;
+    text-align: right
+}
+
+.content-main.order .section-checkout .half-of-parent .input input,
+.content-main.postcheckout .section-checkout .half-of-parent .input input {
+    text-align: left
+}
+
+.content-main.order .section-checkout .select2-phone.input select + .select2 .select2-selection.select2-selection--single,
+.content-main.postcheckout .section-checkout .select2-phone.input select + .select2 .select2-selection.select2-selection--single {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.content-main.order .section-checkout .select2-phone.input select ~ input,
+.content-main.postcheckout .section-checkout .select2-phone.input select ~ input {
+    border-radius: 0 3px 3px 0 !important
+}
+
+.content-main.order .section-checkout .input,
+.content-main.order .section-checkout .label,
+.content-main.postcheckout .section-checkout .input,
+.content-main.postcheckout .section-checkout .label {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.content-main.order .section-checkout .label,
+.content-main.postcheckout .section-checkout .label {
+    font-size: 1em
+}
+
+.content-main.order .section-checkout .label.box-inline-top,
+.content-main.postcheckout .section-checkout .label.box-inline-top {
+    vertical-align: top
+}
+
+.content-main.order .section-checkout .label label,
+.content-main.postcheckout .section-checkout .label label {
+    font-size: 1em
+}
+
+.content-main.order .section-checkout .input select ~ input,
+.content-main.postcheckout .section-checkout .input select ~ input {
+    width: 62.533% !important;
+    border-width: 1px !important;
+    border-left-width: 0 !important;
+    border-radius: 0 3px 3px 0 !important
+}
+
+.content-main.order .section-checkout .input select + .select2-container--open ~ .select2-container--open,
+.content-main.postcheckout .section-checkout .input select + .select2-container--open ~ .select2-container--open {
+    left: 0 !important;
+    top: 42px !important
+}
+
+.content-main.order .section-checkout .input select + .select2 .select2-selection.select2-selection--single,
+.content-main.postcheckout .section-checkout .input select + .select2 .select2-selection.select2-selection--single {
+    height: 42px;
+    border-radius: 3px
+}
+
+.content-main.order .section-checkout .input select + .select2-container--open .select2-selection.select2-selection--single,
+.content-main.postcheckout .section-checkout .input select + .select2-container--open .select2-selection.select2-selection--single {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important
+}
+
+.content-main.order .section-checkout .input select + .select2 .select2-selection.select2-selection--single .select2-selection__rendered,
+.content-main.postcheckout .section-checkout .input select + .select2 .select2-selection.select2-selection--single .select2-selection__rendered {
+    line-height: 39px
+}
+
+.content-main.order .section-checkout .input select + .select2 .select2-selection.select2-selection--single .select2-selection__arrow,
+.content-main.postcheckout .section-checkout .input select + .select2 .select2-selection.select2-selection--single .select2-selection__arrow {
+    height: 39px
+}
+
+.content-main.order .section-checkout .input input[type=password],
+.content-main.order .section-checkout .input input[type=text],
+.content-main.order .section-checkout .input textarea,
+.content-main.postcheckout .section-checkout .input input[type=password],
+.content-main.postcheckout .section-checkout .input input[type=text],
+.content-main.postcheckout .section-checkout .input textarea {
+    font-size: 1em
+}
+
+.content-main.order .section-checkout .legend,
+.content-main.postcheckout .section-checkout .legend {
+    line-height: .6;
+    font-size: 1em;
+    left: 10px !important;
+    font-weight: 700
+}
+
+.content-main.order .section-checkout .fieldset,
+.content-main.postcheckout .section-checkout .fieldset {
+    padding: 20px !important
+}
+
+.content-main.order .section-checkout .fixed-box,
+.content-main.postcheckout .section-checkout .fixed-box {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.content-main.order .section-checkout .required,
+.content-main.postcheckout .section-checkout .required {
+    color: #ff764c
+}
+
+.content-main.order .section-checkout .required.required-static,
+.content-main.postcheckout .section-checkout .required.required-static {
+    position: absolute
+}
+
+.content-main.order .section-checkout .required-error,
+.content-main.postcheckout .section-checkout .required-error {
+    border-color: #ff764c !important
+}
+
+.content-main.order .section-checkout .required-error img,
+.content-main.postcheckout .section-checkout .required-error img {
+    border-color: #ff764c
+}
+
+.content-main.order .section-checkout .input.required-valid ~ .required-valid-message,
+.content-main.postcheckout .section-checkout .input.required-valid ~ .required-valid-message {
+    display: block
+}
+
+.content-main.order .section-checkout .required-valid-message,
+.content-main.postcheckout .section-checkout .required-valid-message {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -5px;
+    margin-left: 5px;
+    width: 12px;
+    height: 10px;
+    background: url(/static/images/icon/valid.png)
+}
+
+.content-main.order .section-checkout .required-error-message,
+.content-main.postcheckout .section-checkout .required-error-message {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-left: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #ff764c;
+    border-radius: 3px;
+    white-space: nowrap;
+    border: 1px solid #ff764c;
+    display: none
+}
+
+.content-main.order .section-checkout .required-error-message.required-error-message-active,
+.content-main.postcheckout .section-checkout .required-error-message.required-error-message-active {
+    display: block
+}
+
+.content-main.order .section-checkout .required-error-message:after,
+.content-main.postcheckout .section-checkout .required-error-message:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-color: transparent #ff764c transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 4px 4px 4px 4px
+}
+
+.content-main.order .white,
+.content-main.postcheckout .white {
+    background-color: #fff !important
+}
+
+.content-main.order .content-main.registration .fieldset,
+.content-main.order .content-main.registration .new-items-list ul li > div,
+.content-main.order .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group,
+.content-main.order .frame,
+.content-main.order .page-order .fieldset,
+.content-main.order .page-order .new-items-list ul li > div,
+.content-main.order .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group,
+.content-main.postcheckout .content-main.registration .fieldset,
+.content-main.postcheckout .content-main.registration .new-items-list ul li > div,
+.content-main.postcheckout .content-main.registration .new-items-list.new-items-list-line ul li > div .new-item-list-group,
+.content-main.postcheckout .frame,
+.content-main.postcheckout .page-order .fieldset,
+.content-main.postcheckout .page-order .new-items-list ul li > div,
+.content-main.postcheckout .page-order .new-items-list.new-items-list-line ul li > div .new-item-list-group,
+.content-main.registration .content-main.order .fieldset,
+.content-main.registration .content-main.postcheckout .fieldset,
+.content-main.registration .new-items-list ul .content-main.order li > div,
+.content-main.registration .new-items-list ul .content-main.postcheckout li > div,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .content-main.order .new-item-list-group,
+.content-main.registration .new-items-list.new-items-list-line ul li > div .content-main.postcheckout .new-item-list-group,
+.page-order .content-main.order .fieldset,
+.page-order .content-main.postcheckout .fieldset,
+.page-order .new-items-list ul .content-main.order li > div,
+.page-order .new-items-list ul .content-main.postcheckout li > div,
+.page-order .new-items-list.new-items-list-line ul li > div .content-main.order .new-item-list-group,
+.page-order .new-items-list.new-items-list-line ul li > div .content-main.postcheckout .new-item-list-group {
+    border-color: #e8e8e8
+}
+
+.content-main.order h1,
+.content-main.postcheckout h1 {
+    font-size: 21px;
+    margin-bottom: 10px
+}
+
+.content-main.order p,
+.content-main.postcheckout p {
+    line-height: 21px;
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.content-main.order .text-color-green,
+.content-main.postcheckout .text-color-green {
+    color: #60bb00
+}
+
+.content-main.order .text-bold,
+.content-main.postcheckout .text-bold {
+    font-weight: 700
+}
+
+.content-main.order .text-center,
+.content-main.postcheckout .text-center {
+    text-align: center
+}
+
+.content-main.order .text-right,
+.content-main.postcheckout .text-right {
+    text-align: right
+}
+
+.content-main.order .btn,
+.content-main.postcheckout .btn {
+    background-color: #eaeaea;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#eaeaea));
+    background-image: linear-gradient(white, #eaeaea);
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #e7e7e7;
+    line-height: toEm(30px);
+    padding: 0 toEm(10px);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Tahoma, "​Arial", "​Verdana", ​sans-serif
+}
+
+.content-main.order .btn .icon,
+.content-main.postcheckout .btn .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: toEm(5px)
+}
+
+.content-main.order .btn:focus,
+.content-main.order .btn:hover,
+.content-main.postcheckout .btn:focus,
+.content-main.postcheckout .btn:hover {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(white));
+    background-image: linear-gradient(#eaeaea, #fff)
+}
+
+.content-main.order .postcheckout-banner,
+.content-main.postcheckout .postcheckout-banner {
+    margin-top: 30px
+}
+
+.content-main.order .postcheckout-mnogoru,
+.content-main.postcheckout .postcheckout-mnogoru {
+    text-align: center
+}
+
+.content-main.order .postcheckout-mnogoru .icon,
+.content-main.postcheckout .postcheckout-mnogoru .icon {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.content-main.order .postcheckout-mnogoru form > * + *,
+.content-main.postcheckout .postcheckout-mnogoru form > * + * {
+    margin-left: 6px
+}
+
+.content-main.order .postcheckout-mnogoru input::-moz-focus-inner,
+.content-main.postcheckout .postcheckout-mnogoru input::-moz-focus-inner {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0
+}
+
+.content-main.order .postcheckout-mnogoru input,
+.content-main.order .postcheckout-mnogoru label,
+.content-main.postcheckout .postcheckout-mnogoru input,
+.content-main.postcheckout .postcheckout-mnogoru label {
+    display: inline-block;
+    vertical-align: top;
+    font-family: Tahoma, "​Arial", "​Verdana", ​sans-serif
+}
+
+.content-main.order .postcheckout-mnogoru label,
+.content-main.postcheckout .postcheckout-mnogoru label {
+    border: 1px solid transparent;
+    line-height: 30px
+}
+
+.content-main.order .postcheckout-mnogoru input[type=text],
+.content-main.postcheckout .postcheckout-mnogoru input[type=text] {
+    text-align: left;
+    border: 1px solid #e8e8e8;
+    line-height: 30px;
+    padding: 0 10px;
+    width: 135px;
+    border-radius: 3px
+}
+
+.content-main.order .postcheckout-setApp .icon,
+.content-main.order .postcheckout-social .icon,
+.content-main.postcheckout .postcheckout-setApp .icon,
+.content-main.postcheckout .postcheckout-social .icon {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.content-main.order .postcheckout-setApp strong,
+.content-main.order .postcheckout-social strong,
+.content-main.postcheckout .postcheckout-setApp strong,
+.content-main.postcheckout .postcheckout-social strong {
+    font-weight: 700
+}
+
+.content-main.order .postcheckout-setApp .h2,
+.content-main.order .postcheckout-social .h2,
+.content-main.postcheckout .postcheckout-setApp .h2,
+.content-main.postcheckout .postcheckout-social .h2 {
+    font-size: 18px
+}
+
+.content-main.order .postcheckout-setApp .h2 .icon,
+.content-main.order .postcheckout-social .h2 .icon,
+.content-main.postcheckout .postcheckout-setApp .h2 .icon,
+.content-main.postcheckout .postcheckout-social .h2 .icon {
+    margin-right: 5px;
+    margin-top: -2px
+}
+
+.content-main.order .postcheckout-social .float-box-group,
+.content-main.postcheckout .postcheckout-social .float-box-group {
+    margin-left: -17px
+}
+
+.content-main.order .postcheckout-social .float-box-group .social-block,
+.content-main.postcheckout .postcheckout-social .float-box-group .social-block {
+    margin-left: 17px
+}
+
+.ui-helper-hidden-accessible {
+    display: none
+}
